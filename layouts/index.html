@@ -1,0 +1,22 @@
+{{ partial "header.html" . }}
+
+<section id="content-home-list">
+        <ul>
+          {{ range $index, $page := first 4 (where .Site.RegularPages "Section" "posts") }}
+          <li {{if eq $index 0}}class="first"{{end}}>
+            {{ if .Params.image }}<div class="image" style="background-image: url({{ .Params.image }})"></div>{{ end }}
+            <h2><a href="{{ .Permalink }}" title="{{ .Title }}">{{ .Title }}</a></h2>
+            <time class="post-date" datetime="{{ .Date.Format "2006-01-02T15:04:05Z07:00" | safeHTML }}">
+                {{ .Date.Format "Jan 2nd, 2006" }}
+            </time>
+            <p>{{ .Summary }}</p>
+          </li>
+          {{ end }}
+        </ul>
+      </section>
+  
+      <section id="content-home-meta">
+        <a href="/posts/">All Posts</a>
+      </section>
+
+{{ partial "footer.html" . }}

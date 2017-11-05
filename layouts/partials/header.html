@@ -1,0 +1,24 @@
+<!doctype html>
+
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>{{ .Site.Title }}</title>
+    <meta name="description" content="The HTML5 Herald">
+    <meta name="author" content="{{ .Site.Author.name }}">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/7.0.0/normalize.min.css">
+    <link rel="stylesheet" type="text/css" href="{{ " css/styles.css " | relURL}}" />
+
+</head>
+
+<body>
+    <div id="container">
+        <header>
+            <h1>
+                <a href="/">{{ .Site.Title }}</a>
+            </h1>
+            <p>{{ .Site.Params.description }}</p>
+        </header>
+        <main>
