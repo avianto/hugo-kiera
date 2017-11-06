@@ -1,6 +1,17 @@
 body {
   margin: 0;
   padding: 0;
+  overflow-x: hidden;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: "Roboto Condensed", sans-serif;
+  font-size: 1.5rem;
+}
+
+p {
+  font-family: "Vollkorn", serif;
+  font-size: 1.3rem;
 }
 
 #container {
@@ -15,6 +26,13 @@ body {
 #container > * {
   width: 700px;
   margin: 0 auto;
+}
+
+@media only screen and (max-width: 800px) {
+  #container > * {
+    width: auto;
+    margin: 0 3em;
+  }
 }
 
 #container nav {
@@ -36,9 +54,6 @@ body {
 
 #container main {
   flex: 1 0 0;
-}
-
-#container main section {
   line-height: 1.5;
 }
 
@@ -52,18 +67,20 @@ body {
   background-color: #ffffcc;
 }
 
+#container footer {
+  border-top: solid 1px #000000;
+}
+
 a {
   color: #666666;
   text-decoration: none;
 }
 
-@supports (width: 100vw) {
-  img[src$="#full"] {
-    width: 100vw;
-  }
-  @media all and (min-width: 40rem) {
-    img[src$="#full"] {
-      transform: translateX(calc((40rem - 100vw)/2));
-    }
-  }
+img[src*="full"] {
+  width: 100vw;
+  position: relative;
+  left: 50%;
+  right: 50%;
+  margin-left: -50vw;
+  margin-right: -50vw;
 }
