@@ -5,10 +5,28 @@
           {{ range $index, $page := first 10 (where .Site.RegularPages "Section" "posts") }}
           <li {{if eq $index 0}}class="first"{{end}}>
             {{ if .Params.image }}<div class="image" style="background-image: url({{ .Params.image }})"></div>{{ end }}
-            <h2><a href="{{ .Permalink }}" title="{{ .Title }}">{{ .Title }}</a></h2>
+            
             <time class="post-date" datetime="{{ .Date.Format "2006-01-02T15:04:05Z07:00" | safeHTML }}">
                 {{ .Date.Format "Jan 2nd, 2006" }}
             </time>
+            {{ if .Params.tags }} &middot; 
+            <em>
+                {{ range $i, $t := .Params.tags }}
+                    {{ if $i }}, {{ end }}
+                    <a href="/tags/{{$t | urlize }}/">#{{ $t }}</a>
+                {{ end }}
+            </em>
+            {{ end }}
+            {{ if .Params.categories }} &middot; 
+            <em>
+                {{ range $i, $c := .Params.categories }}
+                    {{ if $i }}, {{ end }}
+                    <a href="/categories/{{$c | urlize }}/">{{ $c }}</a>
+                {{ end }}
+            </em>
+            {{ end }}
+
+            <h2><a href="{{ .Permalink }}" title="{{ .Title }}">{{ .Title }}</a></h2> 
             <p>{{ .Summary }}</p>
           </li>
           {{ end }}

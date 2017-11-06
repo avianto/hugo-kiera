@@ -6,12 +6,15 @@ body {
 
 h1, h2, h3, h4, h5, h6 {
   font-family: "Roboto Condensed", sans-serif;
-  font-size: 1.5rem;
 }
 
 p {
   font-family: "Vollkorn", serif;
   font-size: 1.3rem;
+}
+
+time {
+  font-family: "Roboto Condensed", sans-serif;
 }
 
 #container {
@@ -38,6 +41,7 @@ p {
 #container nav {
   border-bottom: solid 3px #000000;
   padding-bottom: 0.5em;
+  font-family: "Roboto Condensed", sans-serif;
 }
 
 #container nav ul {
@@ -45,16 +49,24 @@ p {
   padding: 0;
   list-style: none;
   display: flex;
-  justify-content: flex-start;
+  justify-content: flex-end;
 }
 
 #container nav ul li {
-  margin-right: 1em;
+  margin-left: 1em;
+}
+
+#container nav ul li a.active {
+  border-bottom: 0.5em solid #666666;
 }
 
 #container main {
   flex: 1 0 0;
   line-height: 1.5;
+}
+
+#container main section {
+  font-family: "Vollkorn", serif;
 }
 
 #container main section#home ul {
@@ -63,8 +75,50 @@ p {
   list-style: none;
 }
 
+#container main section#home ul li {
+  margin: 0.5em 0;
+}
+
+#container main section#home ul li h2 {
+  margin: 0.2em 0;
+}
+
+#container main section#home ul li p {
+  color: #666666;
+}
+
+#container main section#list ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+#container main section#list ul li {
+  padding: 0.5em 0;
+  border-bottom: 1px solid #000000;
+}
+
+#container main section#list ul li time {
+  float: right;
+}
+
+#container main section#list ul li:last-child {
+  border-bottom: none;
+}
+
+#container main article aside {
+  margin: 0.5em 0;
+  font-family: "Roboto Condensed", sans-serif;
+}
+
 #container main article pre {
   background-color: #ffffcc;
+  overflow-x: auto;
+  padding: 2em;
+}
+
+#container main article pre:hover {
+  width: min-content;
 }
 
 #container footer {
@@ -83,4 +137,27 @@ img[src*="full"] {
   right: 50%;
   margin-left: -50vw;
   margin-right: -50vw;
+}
+
+img[src*="mid"] {
+  width: 800px;
+  position: relative;
+  left: 50%;
+  right: 50%;
+  margin-left: -400px;
+  margin-right: -400px;
+}
+
+@media only screen and (max-width: 800px) {
+  img[src*="mid"] {
+    width: 100%;
+    left: 0;
+    right: 0;
+    margin: 0;
+  }
+}
+
+img[src*="float"] {
+  width: 300px;
+  float: left;
 }

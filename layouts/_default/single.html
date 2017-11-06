@@ -1,5 +1,32 @@
 {{ define "main" }}
 <article>
-{{.Content}}
+    <aside>
+        {{ if not .Params.meta }}
+        {{ .Date.Format "January 2, 2006"}} 
+        {{ end }}
+        {{ if .Params.tags }} | 
+        <em>
+            {{ range $i, $t := .Params.tags }}
+                {{ if $i }}, {{ end }}
+                <a href="/tags/{{$t | urlize }}/">#{{ $t }}</a>
+            {{ end }}
+        </em>
+        {{ end }}
+        {{ if .Params.categories }} | 
+        <em>
+            {{ range $i, $c := .Params.categories }}
+                {{ if $i }}, {{ end }}
+                <a href="/categories/{{$c | urlize }}/">{{ $c }}</a>
+            {{ end }}
+        </em>
+
+        {{ end }}
+    </aside>
+
+    <h1>{{ .Title }}</h1>
+
+    {{.Content}}
+
 </article>
+
 {{ end }}
