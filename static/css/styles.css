@@ -160,4 +160,5 @@ img[src*="mid"] {
 img[src*="float"] {
   width: 300px;
   float: left;
+  margin: 1em 1em 1em 0;
 }
