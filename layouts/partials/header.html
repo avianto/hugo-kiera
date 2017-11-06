@@ -9,7 +9,7 @@
     <meta name="description" content="The HTML5 Herald">
     <meta name="author" content="{{ .Site.Author.name }}">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/7.0.0/normalize.min.css">
-    <link rel="stylesheet" type="text/css" href="{{ " css/styles.css " | relURL}}" />
+    <link rel="stylesheet" type="text/css" href="{{ "css/styles.css" | relURL}}" />
 
 </head>
 
@@ -21,4 +21,5 @@
             </h1>
             <p>{{ .Site.Params.description }}</p>
         </header>
+        {{ partial "nav" . }}
         <main>

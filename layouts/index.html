@@ -1,8 +1,8 @@
-{{ partial "header.html" . }}
+{{ define "main" }}
 
-<section id="content-home-list">
+<section id="home">
         <ul>
-          {{ range $index, $page := first 4 (where .Site.RegularPages "Section" "posts") }}
+          {{ range $index, $page := first 10 (where .Site.RegularPages "Section" "posts") }}
           <li {{if eq $index 0}}class="first"{{end}}>
             {{ if .Params.image }}<div class="image" style="background-image: url({{ .Params.image }})"></div>{{ end }}
             <h2><a href="{{ .Permalink }}" title="{{ .Title }}">{{ .Title }}</a></h2>
@@ -14,9 +14,5 @@
           {{ end }}
         </ul>
       </section>
-  
-      <section id="content-home-meta">
-        <a href="/posts/">All Posts</a>
-      </section>
 
-{{ partial "footer.html" . }}
+{{ end }}

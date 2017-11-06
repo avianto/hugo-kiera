@@ -1,0 +1,26 @@
+{{ define "main" }}
+
+<section id="content-list">
+
+    {{ $baseurl := .Site.BaseURL }}
+
+    <h2>{{ .Title }}</h2>
+
+    {{ .Content }}
+
+    {{ range (.Paginate (.Data.Pages.GroupByDate "2006")).PageGroups  }}
+    
+    <h3>{{ .Key }}</h3>
+    <ul>
+        {{ range .Pages }}
+        <li>
+            <a href="{{ .Permalink }}">{{ if .Draft }}DRAFT: {{end}}{{ .Title | markdownify }}</a>
+            <time class="date-meta">{{ .Date.Format "Jan 2" }}</time>
+        </li>
+        {{ end }}
+    </ul>
+    {{ end }}
+
+</section>
+
+{{ end }}
