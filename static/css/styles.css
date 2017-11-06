@@ -17,6 +17,11 @@ body {
   margin: 0 auto;
 }
 
+#container nav {
+  border-bottom: solid 3px #000000;
+  padding-bottom: 0.5em;
+}
+
 #container nav ul {
   margin: 0;
   padding: 0;
@@ -33,8 +38,32 @@ body {
   flex: 1 0 0;
 }
 
+#container main section {
+  line-height: 1.5;
+}
+
 #container main section#home ul {
   margin: 0;
   padding: 0;
   list-style: none;
+}
+
+#container main article pre {
+  background-color: #ffffcc;
+}
+
+a {
+  color: #666666;
+  text-decoration: none;
+}
+
+@supports (width: 100vw) {
+  img[src$="#full"] {
+    width: 100vw;
+  }
+  @media all and (min-width: 40rem) {
+    img[src$="#full"] {
+      transform: translateX(calc((40rem - 100vw)/2));
+    }
+  }
 }
