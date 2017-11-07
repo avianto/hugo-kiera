@@ -4,7 +4,12 @@ body {
   overflow-x: hidden;
 }
 
-h1, h2, h3, h4, h5, h6 {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
   font-family: "Roboto Condensed", sans-serif;
 }
 
@@ -114,7 +119,7 @@ time {
 #container main article pre {
   background-color: #ffffcc;
   overflow-x: auto;
-  padding: 2em;
+  padding: 1em;
 }
 
 #container main article pre:hover {
@@ -130,7 +135,7 @@ a {
   text-decoration: none;
 }
 
-img[src*="full"] {
+.full-image, figure.full img, img[src*="full"] {
   width: 100vw;
   position: relative;
   left: 50%;
@@ -139,7 +144,7 @@ img[src*="full"] {
   margin-right: -50vw;
 }
 
-img[src*="mid"] {
+.mid-image, figure.mid img, img[src*="mid"] {
   width: 800px;
   position: relative;
   left: 50%;
@@ -149,7 +154,7 @@ img[src*="mid"] {
 }
 
 @media only screen and (max-width: 800px) {
-  img[src*="mid"] {
+  .mid-image, figure.mid img, img[src*="mid"] {
     width: 100%;
     left: 0;
     right: 0;
@@ -157,8 +162,20 @@ img[src*="mid"] {
   }
 }
 
-img[src*="float"] {
+.float-image, figure.float img, img[src*="float"] {
   width: 300px;
   float: left;
-  margin: 1em 1em 1em 0;
+  margin: 0 1em 1em 0;
+}
+
+figure.full {
+  margin: 0;
+}
+
+figure.mid {
+  margin: 0;
+}
+
+figure.float {
+  margin: 0;
 }
