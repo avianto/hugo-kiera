@@ -2,6 +2,7 @@ body {
   margin: 0;
   padding: 0;
   overflow-x: hidden;
+  font-family: "Roboto Slab", serif;
 }
 
 h1,
@@ -9,17 +10,9 @@ h2,
 h3,
 h4,
 h5,
-h6 {
-  font-family: "Open Sans", sans-serif;
-}
-
-p {
-  font-family: "Vollkorn", serif;
-  font-size: 1.3rem;
-}
-
+h6,
 time {
-  font-family: "Open Sans", sans-serif;
+  font-family: "Ruda", sans-serif;
 }
 
 #container {
@@ -69,7 +62,7 @@ time {
 #container nav {
   border-bottom: solid 3px #cecece;
   padding-bottom: 0.5em;
-  font-family: "Open Sans", sans-serif;
+  font-family: "Ruda", sans-serif;
 }
 
 #container nav ul {
@@ -91,10 +84,6 @@ time {
 #container main {
   flex: 1 0 0;
   line-height: 1.5;
-}
-
-#container main section {
-  font-family: "Vollkorn", serif;
 }
 
 #container main section#home ul {
@@ -144,23 +133,15 @@ time {
   border-bottom: none;
 }
 
-#container main article aside {
-  margin: 0.5em 0;
-  font-family: "Open Sans", sans-serif;
-}
-
 #container main article pre {
   background-color: #ffffcc;
   overflow-x: auto;
   padding: 1em;
 }
 
-#container main article pre:hover {
-  width: min-content;
-}
-
-#container main time {
-  font-size: 0.9rem;
+#container main aside {
+  margin: 0.5em 0;
+  font-family: "Ruda", sans-serif;
   color: #909090;
 }
 
@@ -182,29 +163,40 @@ a {
 }
 
 .full-image, figure.full img, img[src*="full"] {
-  width: 100vw;
-  position: relative;
-  left: 50%;
-  right: 50%;
-  margin-left: -50vw;
-  margin-right: -50vw;
+  width: 100%;
+}
+
+@supports (width: 100vw) {
+  .full-image, figure.full img, img[src*="full"] {
+    width: 100vw;
+    position: relative;
+    left: 50%;
+    right: 50%;
+    margin-left: -50vw;
+    margin-right: -50vw;
+  }
 }
 
 .mid-image, figure.mid img, img[src*="mid"] {
-  width: 800px;
-  position: relative;
-  left: 50%;
-  right: 50%;
-  margin-left: -400px;
-  margin-right: -400px;
+  width: 100%;
 }
 
-@media only screen and (max-width: 800px) {
+@supports (width: 100vw) {
   .mid-image, figure.mid img, img[src*="mid"] {
-    width: 100%;
-    left: 0;
-    right: 0;
-    margin: 0;
+    width: 800px;
+    position: relative;
+    left: 50%;
+    right: 50%;
+    margin-left: -400px;
+    margin-right: -400px;
+  }
+  @media only screen and (max-width: 800px) {
+    .mid-image, figure.mid img, img[src*="mid"] {
+      width: 100%;
+      left: 0;
+      right: 0;
+      margin: 0;
+    }
   }
 }
 

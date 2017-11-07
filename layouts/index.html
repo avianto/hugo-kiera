@@ -6,6 +6,7 @@
           <li {{if eq $index 0}}class="first"{{end}}>
             {{ if .Params.image }}<div class="image" style="background-image: url({{ .Params.image }})"></div>{{ end }}
             <h1><a href="{{ .Permalink }}" title="{{ .Title }}">{{ .Title }}</a></h1> 
+            <aside>
             <time class="post-date" datetime="{{ .Date.Format "2006-01-02T15:04:05Z07:00" | safeHTML }}">
                 {{ .Date.Format "Jan 2nd, 2006" }}
             </time>
@@ -30,6 +31,7 @@
                 </em>
             </section>
             {{ end }}
+            </aside>
             <p>{{ .Summary }}</p>
             {{ if .Truncated }}
             <a href="{{ .RelPermalink }}">Read more&hellip;</a>
