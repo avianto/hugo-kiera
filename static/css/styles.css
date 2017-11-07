@@ -10,7 +10,7 @@ h3,
 h4,
 h5,
 h6 {
-  font-family: "Roboto Condensed", sans-serif;
+  font-family: "Open Sans", sans-serif;
 }
 
 p {
@@ -19,7 +19,7 @@ p {
 }
 
 time {
-  font-family: "Roboto Condensed", sans-serif;
+  font-family: "Open Sans", sans-serif;
 }
 
 #container {
@@ -43,10 +43,33 @@ time {
   }
 }
 
+#container header {
+  margin-bottom: 1em;
+}
+
+#container header h1 {
+  font-size: 2.4rem;
+}
+
+#container header h1 a {
+  color: #000000;
+}
+
+#container header ul {
+  display: flex;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+#container header ul li {
+  margin-right: 1em;
+}
+
 #container nav {
-  border-bottom: solid 3px #000000;
+  border-bottom: solid 3px #cecece;
   padding-bottom: 0.5em;
-  font-family: "Roboto Condensed", sans-serif;
+  font-family: "Open Sans", sans-serif;
 }
 
 #container nav ul {
@@ -82,6 +105,8 @@ time {
 
 #container main section#home ul li {
   margin: 0.5em 0;
+  padding-bottom: 0.5em;
+  border-bottom: solid 1px #cecece;
 }
 
 #container main section#home ul li h2 {
@@ -89,6 +114,14 @@ time {
 }
 
 #container main section#home ul li p {
+  color: #666666;
+}
+
+#container main section#home ul li:last-child {
+  border-bottom: none;
+}
+
+#container main section#home span {
   color: #666666;
 }
 
@@ -100,7 +133,7 @@ time {
 
 #container main section#list ul li {
   padding: 0.5em 0;
-  border-bottom: 1px solid #000000;
+  border-bottom: 1px solid #cecece;
 }
 
 #container main section#list ul li time {
@@ -113,7 +146,7 @@ time {
 
 #container main article aside {
   margin: 0.5em 0;
-  font-family: "Roboto Condensed", sans-serif;
+  font-family: "Open Sans", sans-serif;
 }
 
 #container main article pre {
@@ -126,8 +159,21 @@ time {
   width: min-content;
 }
 
+#container main time {
+  font-size: 0.9rem;
+  color: #909090;
+}
+
 #container footer {
-  border-top: solid 1px #000000;
+  border-top: solid 1px #cecece;
+}
+
+#container footer .post-nav ul {
+  margin: 0.5em 0;
+  padding: 0;
+  list-style: none;
+  display: flex;
+  justify-content: space-between;
 }
 
 a {
@@ -165,7 +211,29 @@ a {
 .float-image, figure.float img, img[src*="float"] {
   width: 300px;
   float: left;
-  margin: 0 1em 1em 0;
+  margin: 0 1em 1em -3em;
+}
+
+@media only screen and (max-width: 800px) {
+  .float-image, figure.float img, img[src*="float"] {
+    float: none;
+    margin: 0;
+    width: 100%;
+  }
+}
+
+.float-image-right, figure.float-right img, img[src*="float-right"] {
+  width: 300px;
+  float: right;
+  margin: 0 -3em 1em 1em;
+}
+
+@media only screen and (max-width: 800px) {
+  .float-image-right, figure.float-right img, img[src*="float-right"] {
+    float: none;
+    margin: 0;
+    width: 100%;
+  }
 }
 
 figure.full {
@@ -177,5 +245,9 @@ figure.mid {
 }
 
 figure.float {
+  margin: 0;
+}
+
+figure.float-right {
   margin: 0;
 }
