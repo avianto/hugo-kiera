@@ -37,13 +37,15 @@ googleAnalytics = ""
 Add regular non-posts related page to main menu add these lines to the page front matter:
 
 ```TOML```
+
 ```toml
 menu = "main"
 meta = "false"
 ```
 
 ```YAML```
-```yaml
+
+```yml
 menu: "main"
 meta: "false"
 ```
