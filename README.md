@@ -6,7 +6,7 @@
 cd themes
 git clone ... kiera
 ```
-Using ```git submodule``` is recommended instead of ```git clone``.
+Using ```git submodule``` is recommended instead of ```git clone```.
 
 ## Configuration
 
@@ -32,4 +32,20 @@ googleAnalytics = ""
 
 ```
 
-## Menu
+## Main Menu
+
+Add regular non-posts related page to main menu add these lines to the page front matter:
+
+```TOML```
+```toml
+menu = "main"
+meta = "false"
+```
+
+```YAML```
+```yaml
+menu: "main"
+meta: "false"
+```
+
+
