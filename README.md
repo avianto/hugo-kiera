@@ -41,7 +41,7 @@ googleAnalytics = ""
 
 ## Main Menu
 
-Add regular non-posts related page to main menu add these lines to the page front matter:
+Add regular non-posts related page (eq. About page) to main menu by adding these lines to the page front matter:
 
 TOML:
 ```toml
@@ -54,8 +54,33 @@ menu: "main"
 meta: "false"
 ```
 
+```meta``` refers to time, categories, tags and reading time which are not necessary for this kind of page.
+
 ## Categories & Tags
 
 Both can be used, also can use only one of them or neither.
+
+## Images
+
+Kiera supports adding image as ```img``` tag with standard Markdown
+
+```![Image Title](link/to/image#full)```
+
+or use 
+
+```{{< figure src="/link/to/image" class="full" >}}```
+
+to add it as ```figure```
+
+*Important*: ```#full``` or ```class="full"``` is necessary for image placement. There are 4 placements:
+
+* ```#full``` or ```class="full"``` for full width
+![](screenshots/full.png)
+* ```#mid``` or ```class="mid"``` for middle
+![](screenshots/mid.png)
+* ```#float``` or ```class="float"``` for float left
+![](screenshots/float-left.png)
+* ```#float-right``` or ```class="float-right"``` for float right
+![](screenshots/float-right.png)
 
 
