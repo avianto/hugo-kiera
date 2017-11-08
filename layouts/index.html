@@ -6,37 +6,11 @@
           <li {{if eq $index 0}}class="first"{{end}}>
             {{ if .Params.image }}<div class="image" style="background-image: url({{ .Params.image }})"></div>{{ end }}
             <h1><a href="{{ .Permalink }}" title="{{ .Title }}">{{ .Title }}</a></h1> 
-            <aside>
-            <time class="post-date" datetime="{{ .Date.Format "2006-01-02T15:04:05Z07:00" | safeHTML }}">
-                {{ .Date.Format "Jan 2nd, 2006" }}
-            </time>
-            {{ if .Params.tags }}
-            <section>
-                <em>
-                    {{ range $i, $t := .Params.tags }}
-                        {{ if $i }}, {{ end }}
-                        <a href="/tags/{{$t | urlize }}/">#{{ $t }}</a>
-                    {{ end }}
-                </em>
-            </section>
-            {{ end }}
-            {{ if .Params.categories }}
-            <section>
-                Categories: 
-                <em>
-                    {{ range $i, $c := .Params.categories }}
-                        {{ if $i }}, {{ end }}
-                        <a href="/categories/{{$c | urlize }}/">{{ $c }}</a>
-                    {{ end }}
-                </em>
-            </section>
-            {{ end }}
-            </aside>
+            {{ partial "aside" . }}
             <p>{{ .Summary }}</p>
             {{ if .Truncated }}
             <a href="{{ .RelPermalink }}">Read more&hellip;</a>
             {{ end }}
-            <span>({{ .ReadingTime }} min read)</span>
           </li>
           {{ end }}
         </ul>

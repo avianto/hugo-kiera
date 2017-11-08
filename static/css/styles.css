@@ -53,10 +53,11 @@ time {
   margin: 0;
   padding: 0;
   list-style: none;
+  float: right;
 }
 
 #container header ul li {
-  margin-right: 1em;
+  margin-left: 1em;
 }
 
 #container nav {
@@ -84,6 +85,7 @@ time {
 #container main {
   flex: 1 0 0;
   line-height: 1.5;
+  font-size: 1.2rem;
 }
 
 #container main section#home ul {
@@ -95,19 +97,10 @@ time {
 #container main section#home ul li {
   margin: 0.5em 0;
   padding-bottom: 0.5em;
-  border-bottom: solid 1px #cecece;
 }
 
 #container main section#home ul li h2 {
   margin: 0.2em 0;
-}
-
-#container main section#home ul li p {
-  color: #666666;
-}
-
-#container main section#home ul li:last-child {
-  border-bottom: none;
 }
 
 #container main section#home span {
@@ -139,10 +132,8 @@ time {
   padding: 1em;
 }
 
-#container main aside {
-  margin: 0.5em 0;
-  font-family: "Ruda", sans-serif;
-  color: #909090;
+#container main h1 {
+  margin-bottom: 1rem;
 }
 
 #container footer {
@@ -155,6 +146,24 @@ time {
   list-style: none;
   display: flex;
   justify-content: space-between;
+}
+
+.meta-aside, #container main section#home ul li aside, #container main article aside {
+  margin: 0.5em 0;
+  font-family: "Ruda", sans-serif;
+  color: #909090;
+  font-size: 0.8em;
+}
+
+.meta-aside ul, #container main section#home ul li aside ul, #container main article aside ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.meta-aside ul li, #container main section#home ul li aside ul li, #container main article aside ul li {
+  margin: 0;
+  padding: 0;
 }
 
 a {
@@ -242,4 +251,36 @@ figure.float {
 
 figure.float-right {
   margin: 0;
+}
+
+table {
+  width: 100%;
+  border-bottom: solid 1px #cecece;
+}
+
+table thead {
+  background-color: #cecece;
+}
+
+blockquote {
+  margin: 1em;
+  border-left: solid 0.1em #cecece;
+  padding: 0.5em 2em;
+  position: relative;
+  background-color: #efefef;
+}
+
+blockquote::before {
+  content: "\201C";
+  /*Unicode for Left Double Quote*/
+  font-size: 3em;
+  font-weight: bold;
+  color: #666666;
+  position: absolute;
+  left: 6px;
+  top: 0;
+}
+
+dl dd {
+  font-style: italic;
 }
