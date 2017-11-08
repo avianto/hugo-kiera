@@ -5,7 +5,10 @@ Kiera is the theme specialized for presenting writing layout like long essay or 
 ## Main Features
 
 * 4 image placements with ```figure``` support using shortcodes.
-* Excellent code highlight support thanks to Hugo Chroma.
+* Excellent code highlight support thanks to Hugo Chroma. 
+* Use Font Awesome for icons (Cloudflare CDN)
+* Utilize normalize.css for consistent styling (Cloudflare CDN)
+* Use Google Fonts, Ruda (serif) and Roboto Slab (sans-serif)
 
 ## Installation 
 
@@ -75,12 +78,16 @@ to add it as ```figure```
 *Important*: ```#full``` or ```class="full"``` is necessary for image placement. There are 4 placements:
 
 * ```#full``` or ```class="full"``` for full width
-![](screenshots/full.png)
+![](screenshots/full-image.png)
 * ```#mid``` or ```class="mid"``` for middle
 ![](screenshots/mid.png)
 * ```#float``` or ```class="float"``` for float left
 ![](screenshots/float-left.png)
 * ```#float-right``` or ```class="float-right"``` for float right
 ![](screenshots/float-right.png)
+
+## Code Hightlight
+
+
 
 
