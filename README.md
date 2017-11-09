@@ -48,12 +48,14 @@ Add regular non-posts related page (eq. About page) to main menu by adding these
 
 ```config.toml```
 
+
 ```toml
 menu = "main"
 meta = "false"
 ```
 
 ```config.yaml```
+
 
 ```yml
 menu: "main"
