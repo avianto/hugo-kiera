@@ -129,7 +129,7 @@ Please use GitHub issues to file bugs. If you can help fixing bugs, optimize the
 
 ## TO DO
 
-* _default/terms.html needs some works.
-* 
+* /layout/_default/terms.html needs some works, it functions now, barely.
+* Adding some user-oriented behavior using JavaScripts.
 
 
