@@ -46,12 +46,15 @@ googleAnalytics = ""
 
 Add regular non-posts related page (eq. About page) to main menu by adding these lines to the page front matter:
 
-TOML:
+```config.toml```
+
 ```toml
 menu = "main"
 meta = "false"
 ```
-YAML:
+
+```config.yaml```
+
 ```yml
 menu: "main"
 meta: "false"
@@ -67,15 +70,17 @@ Both can be used, also can use only one of them or neither.
 
 Kiera supports adding image as ```img``` tag with standard Markdown
 
-```![Image Title](link/to/image#full)```
+```![Image Title](link/to/image)```
 
 or use 
 
-```{{< figure src="/link/to/image" class="full" >}}```
+```{{< figure src="/link/to/image" >}}```
 
 to add it as ```figure```
 
-*Important*: ```#full``` or ```class="full"``` is necessary for image placement. There are 4 placements:
+The basic placement is 100% width within content and scaled accordingly in smaller screen. Recommended width for image is 600 pixels minimum.
+
+There are 4 other placements variation:
 
 * ```#full``` or ```class="full"``` for full width
 ![](screenshots/full-image.png)
@@ -88,6 +93,10 @@ to add it as ```figure```
 
 ## Code Hightlight
 
+Using fenced code with Chroma support.
 
+## Support and Pull Requests
+
+Please use GitHub issues to file bugs. If you can help fixing bugs, optimize the theme or adding features, please do pull requests, I really love to see what others can come up with.
 
 

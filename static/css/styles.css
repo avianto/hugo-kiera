@@ -171,6 +171,10 @@ a {
   text-decoration: none;
 }
 
+.image, figure img, img {
+  width: 100%;
+}
+
 .full-image, figure.full img, img[src*="full"] {
   width: 100%;
 }
@@ -235,6 +239,10 @@ a {
     margin: 0;
     width: 100%;
   }
+}
+
+figure {
+  margin: 0;
 }
 
 figure.full {
