@@ -1,10 +1,10 @@
 name = "Kiera"
 license = "MIT"
 licenselink = "https://github.com/avianto/hugo-kiera/blob/master/LICENSE.md"
-description = ""
+description = "Hugo Theme for creative and technical writing"
 homepage = "http://github.com/avianto/hugo-kiera"
-tags = []
-features = []
+tags = ["blog"]
+features = ["blog"]
 min_version = "0.30.2"
 
 [author]

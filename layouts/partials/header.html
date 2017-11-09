@@ -11,7 +11,6 @@
     {{ .Hugo.Generator }}
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/7.0.0/normalize.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <!-- <link href="https://fonts.googleapis.com/css?family=Lora|Roboto" rel="stylesheet"> -->
     <link href="https://fonts.googleapis.com/css?family=Roboto+Slab|Ruda" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="{{ "css/styles.css" | relURL}}" />
 
@@ -21,46 +20,38 @@
     <div id="container">
         <header>
             <h1>
-                <a href="/">{{ .Site.Title }}</a>
+                <a href="/">{{ .Site.Title | markdownify }}</a>
             </h1>
+
             <ul id="social-media">
                 {{ if .Site.Author.twitter }}
-                <li>
-                    <a href="https://twitter.com/{{ .Site.Author.twitter }}"><i class="fa fa-twitter fa-lg" aria-hidden="true"></i></a>
-                </li>
+                <li><a href="https://twitter.com/{{ .Site.Author.twitter }}"><i class="fa fa-twitter fa-lg" aria-hidden="true"></i></a></li>
                 {{ end }}
         
                 {{ if .Site.Author.linkedin }}
-                <li>
-                    <a href="https://www.linkedin.com/in/{{ .Site.Author.linkedin }}"><i class="fa fa-linkedin fa-lg" aria-hidden="true"></i></a>
-                </li>
+                <li><a href="https://www.linkedin.com/in/{{ .Site.Author.linkedin }}"><i class="fa fa-linkedin fa-lg" aria-hidden="true"></i></a></li>
                 {{ end }}
         
                 {{ if .Site.Author.github }}
-                <li>
-                    <a href="https://github.com/{{ .Site.Author.github }}"><i class="fa fa-github fa-lg" aria-hidden="true"></i></a>
-                </li>
+                <li><a href="https://github.com/{{ .Site.Author.github }}"><i class="fa fa-github fa-lg" aria-hidden="true"></i></a></li>
                 {{ end }}
         
                 {{ if .Site.Author.gitlab }}
-                <li>
-                    <a href="https://gitlab.com/{{ .Site.Author.gitlab }}"><i class="fa fa-gitlab fa-lg" aria-hidden="true"></i></a>
-                </li>
+                <li><a href="https://gitlab.com/{{ .Site.Author.gitlab }}"><i class="fa fa-gitlab fa-lg" aria-hidden="true"></i></a></li>
                 {{ end }}
         
                 {{ if .Site.Author.facebook }}
-                <li>
-                    <a href="https://www.facebook.com/{{ .Site.Author.facebook }}"><i class="fa fa-facebook fa-lg" aria-hidden="true"></i></a>
-                </li>
+                <li><a href="https://www.facebook.com/{{ .Site.Author.facebook }}"><i class="fa fa-facebook fa-lg" aria-hidden="true"></i></a></li>
                 {{ end }}
         
                 {{ if .Site.Author.instagram }}
-                <li>
-                    <a href="https://instagram.com/{{ .Site.Author.instagram }}"><i class="fa fa-instagram fa-lg" aria-hidden="true"></i></a>
-                </li>
+                <li><a href="https://instagram.com/{{ .Site.Author.instagram }}"><i class="fa fa-instagram fa-lg" aria-hidden="true"></i></a></li>
                 {{ end }}
             </ul>
-            <p><em>{{ .Site.Params.tagline }}</em></p>
+
+            <p><em>{{ .Site.Params.tagline | markdownify }}</em></p>
         </header>
+
         {{ partial "nav" . }}
+        
         <main>

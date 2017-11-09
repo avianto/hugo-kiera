@@ -1,25 +1,9 @@
 </main>
-<footer>
-    {{ if not .Params.meta }}
-        <section class="post-nav">
-            <ul>
-                {{ with .PrevInSection }}
-                <li>
-                    <a href="{{.Permalink}}"><i class="fa fa-chevron-circle-left"></i> {{ .Title }}</a>
-                </li>
-                {{ end }}
-                {{ with .NextInSection }}
-                <li>
-                    <a href="{{.Permalink}}">{{ .Title }} <i class="fa fa-chevron-circle-right"></i> </a>
-                </li>
-                {{ end }}
-            </ul>
-        </section>
-        {{ partial "disqus" . }}
-    {{ end }}
-    <h6>{{ .Site.Copyright | markdownify }} | Rendered by <a href="https://gohugo.io" title="Hugo">Hugo</a> |
-         <a href="{{.Site.BaseURL}}index.xml">Subscribe</a></h6>
-</footer>
+    <footer>
+        <h6>{{ .Site.Copyright | markdownify }} | 
+            Rendered by <a href="https://gohugo.io" title="Hugo">Hugo</a> |
+            <a href="{{.Site.BaseURL}}index.xml">Subscribe</a></h6>
+    </footer>
 </div>
 <script src="{{ "js/scripts.js" | relURL }}"></script>
 </body>

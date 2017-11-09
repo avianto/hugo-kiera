@@ -1,6 +1,6 @@
 # Kiera Theme for Hugo
 
-Kiera is the theme specialized for presenting writing layout like long essay or technical writing.
+Kiera is the theme specialized in presenting writing layout like long essay or technical writing.
 
 ## Main Features
 
@@ -14,12 +14,17 @@ Kiera is the theme specialized for presenting writing layout like long essay or 
 ## Installation 
 
 ```console
-cd themes
-git clone ... kiera
+$ cd themes
+$ git clone ... kiera
 ```
-Using `git submodule` is recommended instead of `git clone` as per recommendation from [Netlify](https://gohugo.io/hosting-and-deployment/hosting-on-netlify/#use-hugo-themes-with-netlify)
+
+More detailed instruction at [Hugo Docs](http://gohugo.io/themes/installing-and-using-themes/).
+
+Using `git submodule` is recommended instead of `git clone` as per recommendation from [Netlify](https://gohugo.io/hosting-and-deployment/hosting-on-netlify/#use-hugo-themes-with-netlify).
 
 ## Configuration
+
+*Important*: delete or move `archetypes` folder from root unless it is necessary. Current Hugo priority lookup will look into this folder first before any other `archetypes` folder and could cause problem.
 
 Optional `config.toml`:
 
@@ -40,7 +45,6 @@ googleAnalytics = ""
 
 [params]
     tagline = "the tagline for this website"
-
 ```
 
 ## Main Menu
@@ -63,34 +67,49 @@ meta: "false"
 
 ```meta``` refers to time, categories, tags and reading time which are not necessary for this kind of page.
 
+For posts listing page, add `_index.md` file inside `content\posts` folder with these front matter:
+
+```toml
+
++++
+title = "Posts"
+menu = "main"
+weight = "10"
++++
+
+```
+
 ## Categories & Tags
 
 Both can be used, also can use only one of them or neither.
 
 ## Images
 
-Kiera supports adding image as `img` tag with standard Markdown
+Kiera supports adding image as `img` tag with standard Markdown:
 
 `![Image Title](link/to/image)`
 
-or use 
+to wrap it with `figure` use:
 
 `{{< figure src="/link/to/image" >}}`
 
-to add it as `figure`
-
 The basic placement is 100% width within content and scaled accordingly in smaller screen. Recommended width for image is 600 pixels minimum.
 
-There are 4 other placements variation:
+Kiera supports different placement by adding:
 
-* ```#full``` or ```class="full"``` for full width
-![](screenshots/full-image.png)
-* ```#mid``` or ```class="mid"``` for middle
-![](screenshots/mid.png)
-* ```#float``` or ```class="float"``` for float left
-![](screenshots/float-left.png)
-* ```#float-right``` or ```class="float-right"``` for float right
-![](screenshots/float-right.png)
+* For `img`, use `![Image Title](link/to/image#placement)`
+* For `figure`, use `{{< figure src="/link/to/image" class="placement" >}}`
+
+There are 4 configured placements
+
+* `#full` or `class="full"` for full width.
+![](images/screenshots/full-image.png)
+* `#mid` or `class="mid"` for middle:
+![](images/screenshots/mid.png)
+* `#float` or `class="float"` for float left:
+![](images/screenshots/float-left.png)
+* `#float-right` or `class="float-right"` for float right:
+![](images/screenshots/float-right.png)
 
 ## Code Hightlight
 
@@ -107,5 +126,10 @@ Disqus comments are loaded on demand, by clicking <kbd>View Comments</kbd> butto
 ## Support and Pull Requests
 
 Please use GitHub issues to file bugs. If you can help fixing bugs, optimize the theme or adding features, please do pull requests, I really love to see what others can come up with.
+
+## TO DO
+
+* _default/terms.html needs some works.
+* 
 
 

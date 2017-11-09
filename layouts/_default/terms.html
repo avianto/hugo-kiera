@@ -1,0 +1,21 @@
+{{ define "main" }}
+
+<section id="list">
+
+    {{ $baseurl := .Site.BaseURL }}
+
+    <h2>{{ .Title }}</h2>
+
+    {{ .Content }}
+
+    <ul>
+        {{ range $key, $value := .Data.Terms }}
+            <li><a href="{{ $key | urlize }}">{{ $key }}</a> <span class="count">({{ .Count }} entries)</span></li>
+        {{ end }}
+    </ul>
+
+</section>
+
+{{ template "_internal/pagination.html" . }}
+
+{{ end }}

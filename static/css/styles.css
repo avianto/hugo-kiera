@@ -3,6 +3,7 @@ body {
   padding: 0;
   overflow-x: hidden;
   font-family: "Roboto Slab", serif;
+  color: #333333;
 }
 
 h1,
@@ -118,7 +119,7 @@ time {
   border-bottom: 1px solid #cecece;
 }
 
-#container main section#list ul li time {
+#container main section#list ul li time, #container main section#list ul li span.count {
   float: right;
 }
 
@@ -126,22 +127,43 @@ time {
   border-bottom: none;
 }
 
+#container main section.post-nav ul {
+  margin: 0.5em 0;
+  padding: 0.5em 0 0;
+  list-style: none;
+  display: flex;
+  justify-content: space-between;
+  border-top: 1px solid #f7f7f7;
+  font-size: 0.9em;
+}
+
 #container main article pre {
   background-color: #ffffcc;
   overflow-x: auto;
   padding: 0.5em;
+  font-size: 0.9em;
 }
 
 #container main article p code {
   padding: 0.2em;
   background-color: #ffcccc;
+  font-size: 0.9em;
 }
 
 #container main article p kbd {
-  padding: 0.1em;
-  background-color: #e9e9e9;
-  border: solid 1px #c0c0c0;
-  font-size: 0.8em;
+  display: inline-block;
+  padding: 3px 5px;
+  font-size: 0.6em;
+  line-height: 10px;
+  color: #555;
+  vertical-align: middle;
+  background-color: #fcfcfc;
+  border-width: 1px;
+  border-style: solid;
+  border-color: #ccc #ccc #bbb;
+  border-image: none;
+  border-radius: 3px;
+  box-shadow: 0 -1px 0 #bbb inset;
 }
 
 #container main h1 {
@@ -152,12 +174,8 @@ time {
   border-top: solid 1px #cecece;
 }
 
-#container footer .post-nav ul {
-  margin: 0.5em 0;
-  padding: 0;
-  list-style: none;
-  display: flex;
-  justify-content: space-between;
+#container footer h6 {
+  font-size: 0.8em;
 }
 
 .meta-aside, #container main section#home ul li aside, #container main article aside {
@@ -303,4 +321,16 @@ blockquote::before {
 
 dl dd {
   font-style: italic;
+}
+
+ul.pagination {
+  display: flex;
+  justify-content: center;
+  margin: 1em 0 0;
+  padding: 0.5em 0;
+  list-style: none;
+}
+
+ul.pagination li {
+  padding: 0 1em;
 }

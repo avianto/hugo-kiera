@@ -5,6 +5,7 @@
                 {{ .Date.Format "Jan 2nd, 2006" }}
             </time>
         </li>
+        
         {{ if .Params.categories }}
         <li>
             Categories: 
@@ -16,6 +17,7 @@
             </em>
         </li>
         {{ end }}
+
         {{ if .Params.tags }}
         <li>
             <em>
@@ -26,6 +28,7 @@
             </em>
         </li>
         {{ end }}
+
         <li>{{ .ReadingTime }} min read</li>
     </ul>
-    </aside>
+</aside>

@@ -4,12 +4,16 @@
 
     {{ $baseurl := .Site.BaseURL }}
 
-    <h2>{{ .Title }}</h2>
+    {{ if eq .Data.Singular "tag" }}
+        <h2>#{{ .Title | lower }}</h2>
+    {{ else }}
+        <h2>{{ .Title }}</h2>
+    {{ end }}
 
     {{ .Content }}
 
     {{ range (.Paginate (.Data.Pages.GroupByDate "2006")).PageGroups  }}
-    
+
     <h3>{{ .Key }}</h3>
     <ul>
         {{ range .Pages }}
@@ -19,6 +23,7 @@
         </li>
         {{ end }}
     </ul>
+    
     {{ end }}
 
 </section>
