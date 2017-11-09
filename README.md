@@ -9,6 +9,7 @@ Kiera is the theme specialized for presenting writing layout like long essay or 
 * Use Font Awesome for icons (Cloudflare CDN)
 * Utilize normalize.css for consistent styling (Cloudflare CDN)
 * Use Google Fonts, Ruda (serif) and Roboto Slab (sans-serif)
+* Disqus comment loaded on demand
 
 ## Installation 
 
@@ -94,6 +95,10 @@ There are 4 other placements variation:
 ## Code Hightlight
 
 Using fenced code with Chroma support.
+
+## Disqus On Demand
+
+Disqus comments are loaded on demand, by clicking "View Comments" button.
 
 ## Support and Pull Requests
 

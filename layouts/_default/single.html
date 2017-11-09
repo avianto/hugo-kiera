@@ -10,5 +10,8 @@
     {{.Content}}
 
 </article>
+{{ if .Site.DisqusShortname }}
+{{ partial "disqus" . }}
+{{ end }}
 
 {{ end }}
