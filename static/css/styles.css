@@ -129,7 +129,12 @@ time {
 #container main article pre {
   background-color: #ffffcc;
   overflow-x: auto;
-  padding: 1em;
+  padding: 0.5em;
+}
+
+#container main article p code {
+  padding: 0.2em;
+  background-color: #ffcccc;
 }
 
 #container main h1 {
