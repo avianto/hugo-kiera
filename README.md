@@ -131,5 +131,6 @@ Please use GitHub issues to file bugs. If you can help fixing bugs, optimize the
 
 * /layout/_default/terms.html needs some works, it functions now, barely.
 * Adding some user-oriented behavior using JavaScripts.
+* Lazyload images.
 
 
