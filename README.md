@@ -4,11 +4,11 @@ Kiera is the theme specialized for presenting writing layout like long essay or 
 
 ## Main Features
 
-* 4 image placements with ```figure``` support using shortcodes.
+* 4 image placements with `figure` support using shortcodes.
 * Excellent code highlight support thanks to Hugo Chroma. 
 * Use Font Awesome for icons (Cloudflare CDN)
 * Utilize normalize.css for consistent styling (Cloudflare CDN)
-* Use Google Fonts, Ruda (serif) and Roboto Slab (sans-serif)
+* Use Google Fonts: Ruda (serif) and Roboto Slab (sans-serif)
 * Disqus comment loaded on demand
 
 ## Installation 
@@ -17,11 +17,11 @@ Kiera is the theme specialized for presenting writing layout like long essay or 
 cd themes
 git clone ... kiera
 ```
-Using ```git submodule``` is recommended instead of ```git clone``` as per recommendation from [Netlify](https://gohugo.io/hosting-and-deployment/hosting-on-netlify/#use-hugo-themes-with-netlify)
+Using `git submodule` is recommended instead of `git clone` as per recommendation from [Netlify](https://gohugo.io/hosting-and-deployment/hosting-on-netlify/#use-hugo-themes-with-netlify)
 
 ## Configuration
 
-Optional ```config.toml```:
+Optional `config.toml`:
 
 ```toml
 pygmentsCodeFences = true
@@ -69,15 +69,15 @@ Both can be used, also can use only one of them or neither.
 
 ## Images
 
-Kiera supports adding image as ```img``` tag with standard Markdown
+Kiera supports adding image as `img` tag with standard Markdown
 
-```![Image Title](link/to/image)```
+`![Image Title](link/to/image)`
 
 or use 
 
-```{{< figure src="/link/to/image" >}}```
+`{{< figure src="/link/to/image" >}}`
 
-to add it as ```figure```
+to add it as `figure`
 
 The basic placement is 100% width within content and scaled accordingly in smaller screen. Recommended width for image is 600 pixels minimum.
 
@@ -96,9 +96,13 @@ There are 4 other placements variation:
 
 Using fenced code with Chroma support.
 
+## Font Awesome icons
+
+For usage, refer to [Font Awesome](https://fontawesome.io).
+
 ## Disqus On Demand
 
-Disqus comments are loaded on demand, by clicking "View Comments" button.
+Disqus comments are loaded on demand, by clicking <kbd>View Comments</kbd> button.
 
 ## Support and Pull Requests
 
