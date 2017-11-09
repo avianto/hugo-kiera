@@ -46,16 +46,14 @@ googleAnalytics = ""
 
 Add regular non-posts related page (eq. About page) to main menu by adding these lines to the page front matter:
 
-```config.toml```
-
+TOML:
 
 ```toml
 menu = "main"
 meta = "false"
 ```
 
-```config.yaml```
-
+YAML:
 
 ```yml
 menu: "main"
