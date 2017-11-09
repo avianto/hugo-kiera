@@ -137,6 +137,13 @@ time {
   background-color: #ffcccc;
 }
 
+#container main article p kbd {
+  padding: 0.1em;
+  background-color: #e9e9e9;
+  border: solid 1px #c0c0c0;
+  font-size: 0.8em;
+}
+
 #container main h1 {
   margin-bottom: 1rem;
 }
