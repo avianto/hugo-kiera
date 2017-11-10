@@ -140,7 +140,12 @@ time {
 #container main article pre {
   background-color: #ffffcc;
   overflow-x: auto;
-  padding: 0.5em;
+  padding: 0.8em;
+  font-size: 0.9em;
+  box-shadow: 0 -1px 0 #bbbbbb inset;
+}
+
+#container main article pre code {
   font-size: 0.9em;
 }
 
@@ -152,18 +157,18 @@ time {
 
 #container main article p kbd {
   display: inline-block;
-  padding: 3px 5px;
-  font-size: 0.6em;
-  line-height: 10px;
-  color: #555;
+  padding: 0.2em 0.3em;
+  font-size: 0.8em;
+  line-height: 1em;
+  color: #555555;
   vertical-align: middle;
   background-color: #fcfcfc;
   border-width: 1px;
   border-style: solid;
-  border-color: #ccc #ccc #bbb;
+  border-color: #cccccc #cccccc #bbbbbb;
   border-image: none;
   border-radius: 3px;
-  box-shadow: 0 -1px 0 #bbb inset;
+  box-shadow: 0 -1px 0 #bbbbbb inset;
 }
 
 #container main h1 {
@@ -203,10 +208,12 @@ a {
 
 .image, figure img, img {
   width: 100%;
+  box-shadow: 0 3px 3px #bbbbbb;
 }
 
 .full-image, figure.full img, img[src*="full"] {
   width: 100%;
+  box-shadow: 0 3px 3px #bbbbbb;
 }
 
 @supports (width: 100vw) {
@@ -222,6 +229,7 @@ a {
 
 .mid-image, figure.mid img, img[src*="mid"] {
   width: 100%;
+  box-shadow: 0 3px 3px #bbbbbb;
 }
 
 @supports (width: 100vw) {
@@ -247,6 +255,7 @@ a {
   width: 300px;
   float: left;
   margin: 0 1em 1em -3em;
+  box-shadow: 0 3px 3px #bbbbbb;
 }
 
 @media only screen and (max-width: 800px) {
@@ -261,6 +270,7 @@ a {
   width: 300px;
   float: right;
   margin: 0 -3em 1em 1em;
+  box-shadow: 0 3px 3px #bbbbbb;
 }
 
 @media only screen and (max-width: 800px) {
@@ -306,14 +316,14 @@ blockquote {
   padding: 0.5em 2em;
   position: relative;
   background-color: #efefef;
+  box-shadow: 0 -1px 0 #bbbbbb inset;
 }
 
 blockquote::before {
-  content: "\201C";
-  /*Unicode for Left Double Quote*/
+  content: "\f10d";
   font-size: 3em;
-  font-weight: bold;
-  color: #666666;
+  font-family: "FontAwesome";
+  color: rgba(192, 192, 192, 0.3);
   position: absolute;
   left: 6px;
   top: 0;
