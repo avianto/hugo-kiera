@@ -13,7 +13,7 @@ Kiera is the theme specialized in presenting writing layout like long essay or t
 
 ## Demo
 
-Live demo: https://avianto.github.io/hugo-kiera/
+Live demo: https://avianto.github.io/hugo-kiera/index.html
 
 ## Installation 
 
