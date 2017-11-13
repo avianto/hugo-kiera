@@ -3,8 +3,8 @@ license = "MIT"
 licenselink = "https://github.com/avianto/hugo-kiera/blob/master/LICENSE.md"
 description = "Hugo Theme for creative and technical writing"
 homepage = "http://github.com/avianto/hugo-kiera"
-tags = ["blog"]
-features = ["blog"]
+tags = ["blog","minimal","responsive"]
+features = ["blog","disqus","google-analytics","font-awesome"]
 min_version = "0.30.2"
 
 [author]
