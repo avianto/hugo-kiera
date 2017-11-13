@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Tags on Kiera</title>
+    <link>https://avianto.github.io/hugo-kiera/tags/</link>
+    <description>Recent content in Tags on Kiera</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <copyright>Copyright &amp;copy; 2017 - b. avianto</copyright>
+    <lastBuildDate>Wed, 02 Apr 2014 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="https://avianto.github.io/hugo-kiera/tags/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Development</title>
+      <link>https://avianto.github.io/hugo-kiera/tags/development/</link>
+      <pubDate>Wed, 02 Apr 2014 00:00:00 +0000</pubDate>
+      
+      <guid>https://avianto.github.io/hugo-kiera/tags/development/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Go</title>
+      <link>https://avianto.github.io/hugo-kiera/tags/go/</link>
+      <pubDate>Wed, 02 Apr 2014 00:00:00 +0000</pubDate>
+      
+      <guid>https://avianto.github.io/hugo-kiera/tags/go/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Golang</title>
+      <link>https://avianto.github.io/hugo-kiera/tags/golang/</link>
+      <pubDate>Wed, 02 Apr 2014 00:00:00 +0000</pubDate>
+      
+      <guid>https://avianto.github.io/hugo-kiera/tags/golang/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Hugo</title>
+      <link>https://avianto.github.io/hugo-kiera/tags/hugo/</link>
+      <pubDate>Wed, 02 Apr 2014 00:00:00 +0000</pubDate>
+      
+      <guid>https://avianto.github.io/hugo-kiera/tags/hugo/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Templates</title>
+      <link>https://avianto.github.io/hugo-kiera/tags/templates/</link>
+      <pubDate>Wed, 02 Apr 2014 00:00:00 +0000</pubDate>
+      
+      <guid>https://avianto.github.io/hugo-kiera/tags/templates/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Themes</title>
+      <link>https://avianto.github.io/hugo-kiera/tags/themes/</link>
+      <pubDate>Wed, 02 Apr 2014 00:00:00 +0000</pubDate>
+      
+      <guid>https://avianto.github.io/hugo-kiera/tags/themes/</guid>
+      <description></description>
+    </item>
+    
+  </channel>
+</rss>

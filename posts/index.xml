@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Posts on Kiera</title>
+    <link>https://avianto.github.io/hugo-kiera/posts/</link>
+    <description>Recent content in Posts on Kiera</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <copyright>Copyright &amp;copy; 2017 - b. avianto</copyright>
+    <lastBuildDate>Tue, 07 Nov 2017 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="https://avianto.github.io/hugo-kiera/posts/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Sample Content</title>
+      <link>https://avianto.github.io/hugo-kiera/posts/sample-content/</link>
+      <pubDate>Tue, 07 Nov 2017 00:00:00 +0000</pubDate>
+      
+      <guid>https://avianto.github.io/hugo-kiera/posts/sample-content/</guid>
+      <description>Header 1 Header 2 Header 3 Header 4 Moinsen! Der kess 🦄 Lichtspieltheater. Kittchen und Schwedenfilm krakelen blümerant Narr. Das flügge Personenvereinzelungsanlage dengeln. Kleintierzuchtverein und Naschkatze meucheln adrett Himmelfahrtskommando. Der gebeutelt Personenvereinzelungsanlage.</description>
+    </item>
+    
+    <item>
+      <title>Creating a New Theme</title>
+      <link>https://avianto.github.io/hugo-kiera/posts/creating-a-new-theme/</link>
+      <pubDate>Sun, 28 Sep 2014 00:00:00 +0000</pubDate>
+      
+      <guid>https://avianto.github.io/hugo-kiera/posts/creating-a-new-theme/</guid>
+      <description>Introduction This tutorial will show you how to create a simple theme in Hugo. I assume that you are familiar with HTML, the bash command line, and that you are comfortable using Markdown to format content.</description>
+    </item>
+    
+    <item>
+      <title>(Hu)go Template Primer</title>
+      <link>https://avianto.github.io/hugo-kiera/posts/goisforlovers/</link>
+      <pubDate>Wed, 02 Apr 2014 00:00:00 +0000</pubDate>
+      
+      <guid>https://avianto.github.io/hugo-kiera/posts/goisforlovers/</guid>
+      <description>Hugo uses the excellent go html/template library for its template engine. It is an extremely lightweight engine that provides a very small amount of logic. In our experience that it is just the right amount of logic to be able to create a good static website.</description>
+    </item>
+    
+    <item>
+      <title>Getting Started with Hugo</title>
+      <link>https://avianto.github.io/hugo-kiera/posts/hugoisforlovers/</link>
+      <pubDate>Wed, 02 Apr 2014 00:00:00 +0000</pubDate>
+      
+      <guid>https://avianto.github.io/hugo-kiera/posts/hugoisforlovers/</guid>
+      <description>Step 1. Install Hugo Goto hugo releases and download the appropriate version for your os and architecture.
+Save it somewhere specific as we will be using it in the next step.</description>
+    </item>
+    
+    <item>
+      <title>Migrate to Hugo from Jekyll</title>
+      <link>https://avianto.github.io/hugo-kiera/posts/migrate-from-jekyll/</link>
+      <pubDate>Mon, 10 Mar 2014 00:00:00 +0000</pubDate>
+      
+      <guid>https://avianto.github.io/hugo-kiera/posts/migrate-from-jekyll/</guid>
+      <description>Move static content to static Jekyll has a rule that any directory not starting with _ will be copied as-is to the _site output. Hugo keeps all static content under static.</description>
+    </item>
+    
+  </channel>
+</rss>
