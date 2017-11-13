@@ -69,7 +69,7 @@ meta: "false"
 
 For posts listing page, add `_index.md` file inside `content\posts` folder with these front matter:
 
-```toml
+TOML:
 
 +++
 title = "Posts"
