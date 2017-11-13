@@ -13,14 +13,21 @@ Kiera is the theme specialized in presenting writing layout like long essay or t
 
 ## Installation 
 
+Change into Hugo directory then:
+
 ```console
 $ cd themes
-$ git clone ... kiera
+$ git clone https://github.com/avianto/hugo-kiera.git kiera
 ```
 
 More detailed instruction at [Hugo Docs](http://gohugo.io/themes/installing-and-using-themes/).
 
 Using `git submodule` is recommended instead of `git clone` as per recommendation from [Netlify](https://gohugo.io/hosting-and-deployment/hosting-on-netlify/#use-hugo-themes-with-netlify).
+
+```console
+$ cd themes
+$ git submodule add https://github.com/avianto/hugo-kiera.git kiera
+```
 
 ## Configuration
 
