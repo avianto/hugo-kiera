@@ -78,12 +78,12 @@ For posts listing page, add `_index.md` file inside `content\posts` folder with 
 
 TOML:
 
+```toml
 +++
 title = "Posts"
 menu = "main"
 weight = "10"
 +++
-
 ```
 
 ## Categories & Tags
