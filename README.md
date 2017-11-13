@@ -33,22 +33,22 @@ $ git submodule add https://github.com/avianto/hugo-kiera.git kiera
 
 *Important*: delete or move `archetypes` folder from root unless it is necessary. Current Hugo priority lookup will look into this folder first before any other `archetypes` folder and could cause problem.
 
-Optional `config.toml`:
+Recommended optional `config.toml`:
 
 ```toml
 pygmentsCodeFences = true
 
-disqusShortname = ""
-googleAnalytics = ""
+disqusShortname = "" #Disqus shortname
+googleAnalytics = "" #Google Analytics ID
 
 [author]
-    name = ""
-    github = ""
-    gitlab = ""
-    linkedin = ""
-    facebook = ""
-    twitter = ""
-    instagram = ""
+    name = ""       #Author name
+    github = ""     #Github username
+    gitlab = ""     #Gitlab username
+    linkedin = ""   #LinkedIn username
+    facebook = ""   #Facebook username
+    twitter = ""    #Twitter username
+    instagram = ""  #Instagram username
 
 [params]
     tagline = "the tagline for this website"
