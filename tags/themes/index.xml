@@ -2,21 +2,21 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Themes on Kiera</title>
-    <link>http://example.com/tags/themes/</link>
+    <link>http://avianto.github.io/hugo-kiera/tags/themes/</link>
     <description>Recent content in Themes on Kiera</description>
     <generator>Hugo -- gohugo.io</generator>
     <copyright>Copyright &amp;copy; 2017 - b. avianto</copyright>
     <lastBuildDate>Wed, 02 Apr 2014 00:00:00 +0000</lastBuildDate>
     
-	<atom:link href="http://example.com/tags/themes/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="http://avianto.github.io/hugo-kiera/tags/themes/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>(Hu)go Template Primer</title>
-      <link>http://example.com/posts/goisforlovers/</link>
+      <link>http://avianto.github.io/hugo-kiera/posts/goisforlovers/</link>
       <pubDate>Wed, 02 Apr 2014 00:00:00 +0000</pubDate>
       
-      <guid>http://example.com/posts/goisforlovers/</guid>
+      <guid>http://avianto.github.io/hugo-kiera/posts/goisforlovers/</guid>
       <description>Hugo uses the excellent go html/template library for its template engine. It is an extremely lightweight engine that provides a very small amount of logic. In our experience that it is just the right amount of logic to be able to create a good static website.</description>
     </item>
     
