@@ -12,14 +12,14 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/7.0.0/normalize.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link href="https://fonts.googleapis.com/css?family=Roboto+Slab|Ruda" rel="stylesheet">
-    <link rel="stylesheet" type="text/css" href="https://avianto.github.io/hugo-kiera/css/styles.css" />
+    <link rel="stylesheet" type="text/css" href="http://example.com/css/styles.css" />
 </head>
 
 <body>
     <div id="container">
         <header>
             <h1>
-                <a href="https://avianto.github.io/hugo-kiera/">Kiera</a>
+                <a href="http://example.com/">Kiera</a>
             </h1>
 
             <ul id="social-media">
@@ -48,7 +48,7 @@
                 
             </ul>
 
-            <p><em>A Hugo theme for beautiful writing</em></p>
+            <p><em>A Hugo theme for creative and technical writing</em></p>
         </header>
 
         
@@ -56,13 +56,13 @@
     <ul>
         
         <li>
-            <a class="" href="https://avianto.github.io/hugo-kiera/posts/">
+            <a class="" href="http://example.com/posts/">
                 <i class="fa-li fa  fa-lg"></i><span>Posts</span>
             </a>
         </li>
         
         <li>
-            <a class="" href="https://avianto.github.io/hugo-kiera/about/">
+            <a class="" href="http://example.com/about/">
                 <i class="fa-li fa  fa-lg"></i><span>About Hugo</span>
             </a>
         </li>
@@ -1198,16 +1198,69 @@ $ vi themes/zafta/layouts/_default/single.html
     <ul>
         
         <li>
-            <a href="https://avianto.github.io/hugo-kiera/posts/goisforlovers/"><i class="fa fa-chevron-circle-left"></i> (Hu)go Template Primer</a>
+            <a href="http://example.com/posts/goisforlovers/"><i class="fa fa-chevron-circle-left"></i> (Hu)go Template Primer</a>
         </li>
         
         
         <li>
-            <a href="https://avianto.github.io/hugo-kiera/posts/sample-content/">Sample Content <i class="fa fa-chevron-circle-right"></i> </a>
+            <a href="http://example.com/posts/image-content/">Image Style Guide <i class="fa fa-chevron-circle-right"></i> </a>
         </li>
         
     </ul>
 </section>
+    
+        <section class="comments-block">
+      <button id="show-comments" style="display: none;"><i class="fa fa-comments-o"></i> Add/View Comments</button>
+</section>
+
+<section id="disqus_thread"></section>
+
+<script>
+      (function () {
+            
+            
+            if (window.location.hostname == "localhost")
+                  return;
+
+            var disqus_loaded = false;
+            var disqus_shortname = 'avianto';
+            var disqus_button = document.getElementById("show-comments");
+
+            disqus_button.style.display = "";
+            disqus_button.addEventListener("click", disqus, false);
+
+            function disqus() {
+
+                  if (!disqus_loaded) {
+                        disqus_loaded = true;
+
+                        var e = document.createElement("script");
+                        e.type = "text/javascript";
+                        e.async = true;
+                        e.src = "//" + disqus_shortname + ".disqus.com/embed.js";
+                        (document.getElementsByTagName("head")[0] ||
+                              document.getElementsByTagName("body")[0])
+                        .appendChild(e);
+
+                        
+                        document.getElementById("show-comments").style.display = "none";
+                  }
+            }
+
+            
+            var hash = window.location.hash.substr(1);
+            if (hash.length > 8) {
+                  if (hash.substring(0, 8) == "comment-") {
+                        disqus();
+                  }
+            }
+
+            
+            if (/bot|google|baidu|bing|msn|duckduckgo|slurp|yandex/i.test(navigator.userAgent)) {
+                  disqus();
+            }
+      })();
+</script>
     
 
 
@@ -1217,10 +1270,10 @@ $ vi themes/zafta/layouts/_default/single.html
     <footer>
         <h6>Copyright &copy; 2017 - b. avianto | 
             Rendered by <a href="https://gohugo.io" title="Hugo">Hugo</a> |
-            <a href="https://avianto.github.io/hugo-kiera/index.xml">Subscribe</a></h6>
+            <a href="http://example.comindex.xml">Subscribe</a></h6>
     </footer>
 </div>
-<script src="https://avianto.github.io/hugo-kiera/js/scripts.js"></script>
+<script src="http://example.com/js/scripts.js"></script>
 </body>
 
 </html>

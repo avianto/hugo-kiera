@@ -33,7 +33,7 @@ time {
 @media only screen and (max-width: 800px) {
   #container > * {
     width: auto;
-    margin: 0 3em;
+    margin: 0 1.2em;
   }
 }
 
@@ -59,6 +59,15 @@ time {
 
 #container header ul li {
   margin-left: 1em;
+}
+
+@media only screen and (max-width: 800px) {
+  #container header ul {
+    float: none;
+  }
+  #container header ul li {
+    margin: 0 1em 0 0;
+  }
 }
 
 #container nav {
@@ -285,6 +294,12 @@ figure {
   margin: 0;
 }
 
+figure figcaption p {
+  margin-top: 0.3em;
+  font-size: 0.8em;
+  font-style: italic;
+}
+
 figure.full {
   margin: 0;
 }
@@ -327,6 +342,13 @@ blockquote::before {
   position: absolute;
   left: 6px;
   top: 0;
+}
+
+@media only screen and (max-width: 800px) {
+  blockquote {
+    margin: 1em 0;
+    padding: 0.5em;
+  }
 }
 
 dl dd {
