@@ -47,8 +47,9 @@
                 <li><a href="https://instagram.com/{{ .Site.Author.instagram }}"><i class="fa fa-instagram fa-lg" aria-hidden="true"></i></a></li>
                 {{ end }}
             </ul>
-
-            <p><em>{{ .Site.Params.tagline | markdownify }}</em></p>
+            {{ with .Site.Params.tagline }}
+            <p><em>{{ . | markdownify }}</em></p>
+            {{ end }}
         </header>
 
         {{ partial "nav" . }}

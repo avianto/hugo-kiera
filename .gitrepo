@@ -6,6 +6,6 @@
 [subrepo]
 	remote = https://github.com/avianto/hugo-kiera.git
 	branch = master
-	commit = 794f33657a5e0e835a59e7113a29cbad0fde2d2b
+	commit = 18cd274817930abfdba7ae0aff426fafd6154920
 	parent = 4348764a32d9f6027d71da28ad5d2498bb07c8a4
 	cmdver = 0.3.1
