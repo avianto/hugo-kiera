@@ -2,7 +2,7 @@
 
 <section id="home">
         <ul>
-          {{ range $index, $page := first 10 (where .Site.RegularPages "Section" "posts") }}
+          {{ range $index, $page := first 10 (where .Data.Pages "Section" "in" .Site.Params.mainSections) }}
           <li {{if eq $index 0}}class="first"{{end}}>
             {{ if .Params.image }}<div class="image" style="background-image: url({{ .Params.image }})"></div>{{ end }}
             <h1><a href="{{ .Permalink }}" title="{{ .Title }}">{{ .Title }}</a></h1> 
