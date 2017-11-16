@@ -3,106 +3,106 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
-    <loc>https://avianto.github.io/posts/</loc>
+    <loc>https://avianto.github.io/hugo-kiera/posts/</loc>
     <lastmod>2017-11-14T10:57:55-05:00</lastmod>
   </url>
   
   <url>
-    <loc>https://avianto.github.io/about/</loc>
+    <loc>https://avianto.github.io/hugo-kiera/about/</loc>
     <lastmod>2014-04-09T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>https://avianto.github.io/posts/style-guide/</loc>
+    <loc>https://avianto.github.io/hugo-kiera/posts/style-guide/</loc>
     <lastmod>2017-11-14T10:57:55-05:00</lastmod>
   </url>
   
   <url>
-    <loc>https://avianto.github.io/posts/image-content/</loc>
+    <loc>https://avianto.github.io/hugo-kiera/posts/image-content/</loc>
     <lastmod>2017-11-14T08:08:17-05:00</lastmod>
   </url>
   
   <url>
-    <loc>https://avianto.github.io/posts/creating-a-new-theme/</loc>
+    <loc>https://avianto.github.io/hugo-kiera/posts/creating-a-new-theme/</loc>
     <lastmod>2014-09-28T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>https://avianto.github.io/posts/goisforlovers/</loc>
+    <loc>https://avianto.github.io/hugo-kiera/posts/goisforlovers/</loc>
     <lastmod>2014-04-02T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>https://avianto.github.io/posts/hugoisforlovers/</loc>
+    <loc>https://avianto.github.io/hugo-kiera/posts/hugoisforlovers/</loc>
     <lastmod>2014-04-02T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>https://avianto.github.io/posts/migrate-from-jekyll/</loc>
+    <loc>https://avianto.github.io/hugo-kiera/posts/migrate-from-jekyll/</loc>
     <lastmod>2014-03-10T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>https://avianto.github.io/categories/</loc>
+    <loc>https://avianto.github.io/hugo-kiera/categories/</loc>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://avianto.github.io/tags/development/</loc>
+    <loc>https://avianto.github.io/hugo-kiera/tags/development/</loc>
     <lastmod>2014-04-02T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://avianto.github.io/categories/development/</loc>
+    <loc>https://avianto.github.io/hugo-kiera/categories/development/</loc>
     <lastmod>2014-04-02T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://avianto.github.io/tags/go/</loc>
+    <loc>https://avianto.github.io/hugo-kiera/tags/go/</loc>
     <lastmod>2014-04-02T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://avianto.github.io/tags/golang/</loc>
+    <loc>https://avianto.github.io/hugo-kiera/tags/golang/</loc>
     <lastmod>2014-04-02T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://avianto.github.io/categories/golang/</loc>
+    <loc>https://avianto.github.io/hugo-kiera/categories/golang/</loc>
     <lastmod>2014-04-02T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://avianto.github.io/tags/hugo/</loc>
+    <loc>https://avianto.github.io/hugo-kiera/tags/hugo/</loc>
     <lastmod>2014-04-02T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://avianto.github.io/</loc>
+    <loc>https://avianto.github.io/hugo-kiera/</loc>
     <lastmod>2014-04-09T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://avianto.github.io/tags/</loc>
+    <loc>https://avianto.github.io/hugo-kiera/tags/</loc>
     <lastmod>2014-04-02T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://avianto.github.io/tags/templates/</loc>
+    <loc>https://avianto.github.io/hugo-kiera/tags/templates/</loc>
     <lastmod>2014-04-02T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://avianto.github.io/tags/themes/</loc>
+    <loc>https://avianto.github.io/hugo-kiera/tags/themes/</loc>
     <lastmod>2014-04-02T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
