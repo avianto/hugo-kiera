@@ -310,10 +310,16 @@ figure.mid {
 
 figure.float {
   margin: 0;
+  float: left;
 }
 
 figure.float-right {
   margin: 0;
+  float: right;
+}
+
+figure.float-right figcaption {
+  margin-left: 1em;
 }
 
 table {

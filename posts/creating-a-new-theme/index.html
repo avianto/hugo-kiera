@@ -12,14 +12,14 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/7.0.0/normalize.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link href="https://fonts.googleapis.com/css?family=Roboto+Slab|Ruda" rel="stylesheet">
-    <link rel="stylesheet" type="text/css" href="https://avianto.github.io/hugo-kiera/css/styles.css" />
+    <link rel="stylesheet" type="text/css" href="https://avianto.github.io/css/styles.css" />
 </head>
 
 <body>
     <div id="container">
         <header>
             <h1>
-                <a href="https://avianto.github.io/hugo-kiera/">Kiera</a>
+                <a href="https://avianto.github.io/">Kiera</a>
             </h1>
 
             <ul id="social-media">
@@ -47,8 +47,9 @@
                 <li><a href="https://instagram.com/avianto"><i class="fa fa-instagram fa-lg" aria-hidden="true"></i></a></li>
                 
             </ul>
-
-            <p><em>A Hugo theme for creative and technical writing</em></p>
+            
+            <p><em>A Hugo theme for creative writing</em></p>
+            
         </header>
 
         
@@ -56,13 +57,13 @@
     <ul>
         
         <li>
-            <a class="" href="https://avianto.github.io/hugo-kiera/posts/">
+            <a class="" href="https://avianto.github.io/posts/">
                 <i class="fa-li fa  fa-lg"></i><span>Posts</span>
             </a>
         </li>
         
         <li>
-            <a class="" href="https://avianto.github.io/hugo-kiera/about/">
+            <a class="" href="https://avianto.github.io/about/">
                 <i class="fa-li fa  fa-lg"></i><span>About Hugo</span>
             </a>
         </li>
@@ -996,7 +997,7 @@ i'm speechless
     &lt;h1&gt;&lt;a href=&quot;http://localhost:1313/post/first-post/&quot;&gt;first&lt;/a&gt;&lt;/h1&gt;
 &lt;script&gt;document.write('&lt;script src=&quot;http://'
         + (location.host || 'localhost').split(':')[0]
-        + ':1313/livereload.js?mindelay=10&quot;&gt;&lt;/'
+		+ ':1313/livereload.js?mindelay=10&quot;&gt;&lt;/'
         + 'script&gt;')&lt;/script&gt;&lt;/body&gt;
 &lt;/html&gt;
 </code></pre>
@@ -1041,8 +1042,8 @@ i'm speechless
 
 <pre><code>$ vi config.toml
 [permalinks]
-    page = &quot;/:title/&quot;
-    about = &quot;/:filename/&quot;
+	page = &quot;/:title/&quot;
+	about = &quot;/:filename/&quot;
 </code></pre>
 
 <p>Generate the web site and verify that this didn&rsquo;t work. Hugo lets &ldquo;slug&rdquo; or &ldquo;URL&rdquo; override the permalinks setting in the configuration file. Go ahead and comment out the slug in content/about.md, then generate the web site to get it to be created in the right place.</p>
@@ -1061,7 +1062,7 @@ i'm speechless
 &lt;!DOCTYPE html&gt;
 &lt;html&gt;
 &lt;head&gt;
-    &lt;title&gt;{{ .Title }}&lt;/title&gt;
+	&lt;title&gt;{{ .Title }}&lt;/title&gt;
 &lt;/head&gt;
 &lt;body&gt;
 :wq
@@ -1198,12 +1199,12 @@ $ vi themes/zafta/layouts/_default/single.html
     <ul>
         
         <li>
-            <a href="https://avianto.github.io/hugo-kiera/posts/goisforlovers/"><i class="fa fa-chevron-circle-left"></i> (Hu)go Template Primer</a>
+            <a href="https://avianto.github.io/posts/goisforlovers/"><i class="fa fa-chevron-circle-left"></i> (Hu)go Template Primer</a>
         </li>
         
         
         <li>
-            <a href="https://avianto.github.io/hugo-kiera/posts/image-content/">Image Style Guide <i class="fa fa-chevron-circle-right"></i> </a>
+            <a href="https://avianto.github.io/posts/image-content/">Image Style Guide <i class="fa fa-chevron-circle-right"></i> </a>
         </li>
         
     </ul>
@@ -1217,10 +1218,10 @@ $ vi themes/zafta/layouts/_default/single.html
     <footer>
         <h6>Copyright &copy; 2017 - b. avianto | 
             Rendered by <a href="https://gohugo.io" title="Hugo">Hugo</a> |
-            <a href="https://avianto.github.io/hugo-kieraindex.xml">Subscribe</a></h6>
+            <a href="https://avianto.github.ioindex.xml">Subscribe</a></h6>
     </footer>
 </div>
-<script src="https://avianto.github.io/hugo-kiera/js/scripts.js"></script>
+<script src="https://avianto.github.io/js/scripts.js"></script>
 </body>
 
 </html>
