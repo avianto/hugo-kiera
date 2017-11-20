@@ -1,0 +1,25 @@
+baseurl = "https://www.example.org/"
+title = "Kiera"
+copyright = "Copyright &copy; 2017 - Author Name"
+canonifyurls = true
+theme = "kiera"
+
+paginate = 3
+
+summaryLength = 30
+enableEmoji = true
+pygmentsCodeFences = true
+
+[author]
+    name = ""
+    github = ""
+    gitlab = ""
+    linkedin = ""
+    facebook = ""
+    twitter = ""
+    instagram = ""
+
+[params]
+    tagline = "A Hugo theme for creative and technical writing"
+
+

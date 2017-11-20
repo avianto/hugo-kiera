@@ -35,6 +35,8 @@ $ git submodule add https://github.com/avianto/hugo-kiera.git kiera
 
 ## Configuration
 
+For reference look inside folder `exampleSite` for content example and `config.toml`.
+
 *Important*: delete or move `archetypes` folder from root unless it is necessary. Current Hugo priority lookup will look into this folder first before any other `archetypes` folder and could cause problem.
 
 Recommended optional `config.toml`:
