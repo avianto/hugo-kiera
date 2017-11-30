@@ -6,13 +6,7 @@ body {
   color: #333333;
 }
 
-h1,
-h2,
-h3,
-h4,
-h5,
-h6,
-time {
+h1, h2, h3, h4, h5, h6, time {
   font-family: "Ruda", sans-serif;
 }
 
@@ -25,13 +19,13 @@ time {
   flex-direction: column;
 }
 
-#container > * {
+#container>* {
   width: 700px;
   margin: 0 auto;
 }
 
 @media only screen and (max-width: 800px) {
-  #container > * {
+  #container>* {
     width: auto;
     margin: 0 1.2em;
   }
@@ -371,4 +365,13 @@ ul.pagination {
 
 ul.pagination li {
   padding: 0 1em;
+}
+
+.visually-hidden {
+  position: absolute !important;
+  clip: rect(1px, 1px, 1px, 1px);
+  overflow: hidden;
+  height: 1px;
+  width: 1px;
+  word-wrap: normal;
 }
