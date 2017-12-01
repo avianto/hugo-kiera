@@ -18,12 +18,12 @@
     <ul>
         {{ range .Pages }}
         <li>
-            <a href="{{ .Permalink }}">{{ if .Draft }}DRAFT: {{end}}{{ .Title | markdownify }}</a>
+            <a href="{{ .Permalink }}">{{ if .Draft }}DRAFT: {{end}}{{ if lt now.Unix .PublishDate.Unix }}FUTURE: {{ end }}{{ .Title | markdownify }}</a>
             <time class="date-meta">{{ .Date.Format "Jan 2" }}</time>
         </li>
         {{ end }}
     </ul>
-    
+
     {{ end }}
 
 </section>
