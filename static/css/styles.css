@@ -72,7 +72,7 @@ time {
 
 #container nav {
   border-bottom: solid 3px #cecece;
-  padding-bottom: 0.5em;
+  padding-bottom: 0.1em;
   font-family: "Ruda", sans-serif;
 }
 
@@ -89,7 +89,7 @@ time {
 }
 
 #container nav ul li a.active {
-  border-bottom: 0.5em solid #666666;
+  border-bottom: 0.2em solid #666666;
 }
 
 #container main {
