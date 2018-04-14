@@ -28,7 +28,9 @@
         <li><a href="https://www.facebook.com/{{ .Site.Author.facebook }}"><i class="fa fa-facebook fa-lg" aria-hidden="true"></i></a></li>
         {{ end }} {{ if .Site.Author.instagram }}
         <li><a href="https://instagram.com/{{ .Site.Author.instagram }}"><i class="fa fa-instagram fa-lg" aria-hidden="true"></i></a></li>
-        {{ end }}
+        {{ end }} {{if .Site.Author.gplus}}
+	<li> <a href="https://google.com/+{{.Site.Author.gplus}}"><i class="fa fa-google-plus fa-lg" aria-hidden="true"></i></a></li>
+        {{end}}
       </ul>
       {{ with .Site.Params.tagline }}
       <p><em>{{ . | markdownify }}</em></p>

@@ -18,6 +18,7 @@ pygmentsCodeFences = true
     facebook = ""
     twitter = ""
     instagram = ""
+    gplus = ""
 
 [params]
     tagline = "A Hugo theme for creative and technical writing"
