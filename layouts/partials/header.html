@@ -30,6 +30,8 @@
         <li><a href="https://instagram.com/{{ .Site.Author.instagram }}"><i class="fa fa-instagram fa-lg" aria-hidden="true"></i></a></li>
 		{{ end }} {{ if .Site.Author.vk }}
         <li><a href="https://vk.com/{{ .Site.Author.vk }}"><i class="fa fa-vk fa-lg" aria-hidden="true"></i></a></li>
+		{{ end }} {{ if .Site.Author.mail }}
+        <li><a href="mailto:{{ .Site.Author.mail }}"><i class="fa fa-envelope fa-lg" aria-hidden="true"></i></a></li>
         {{ end }}
       </ul>
       {{ with .Site.Params.tagline }}
