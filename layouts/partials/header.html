@@ -28,6 +28,8 @@
         <li><a href="https://www.facebook.com/{{ .Site.Author.facebook }}"><i class="fa fa-facebook fa-lg" aria-hidden="true"></i></a></li>
         {{ end }} {{ if .Site.Author.instagram }}
         <li><a href="https://instagram.com/{{ .Site.Author.instagram }}"><i class="fa fa-instagram fa-lg" aria-hidden="true"></i></a></li>
+		{{ end }} {{ if .Site.Author.vk }}
+        <li><a href="https://vk.com/{{ .Site.Author.vk }}"><i class="fa fa-vk fa-lg" aria-hidden="true"></i></a></li>
         {{ end }}
       </ul>
       {{ with .Site.Params.tagline }}
