@@ -2,7 +2,7 @@
 
 Kiera is the theme specialized in presenting writing layout like long essay or technical writing.
 
-It was originall developed by [b. avianto](https://github.com/avianto/hugo-kiera).
+It was originally developed by [b. avianto](https://github.com/avianto/hugo-kiera) and now maintained by [funkydan2](//github.com/funkdan2/)
 
 ## Main Features
 
