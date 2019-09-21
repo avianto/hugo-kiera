@@ -13,4 +13,5 @@ min_version = "0.55.0"
 
 [original]
   name = "b. avianto"
-  homepage = "https://github.com/avianto/hugo-kiera"
+  homepage = "https://avianto.com"
+  repo = "https://github.com/avianto/hugo-kiera"
