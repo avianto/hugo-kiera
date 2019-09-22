@@ -60,6 +60,7 @@ googleAnalytics = "" #Google Analytics ID
 
 [params]
     tagline = "the tagline for this website"
+    customCSS = []  #Optional Customised CSS
 ```
 
 ## Main Menu
@@ -80,7 +81,7 @@ menu: "main"
 meta: "false"
 ```
 
-```meta``` refers to time, categories, tags and reading time which are not necessary for this kind of page.
+`meta` refers to time, categories, tags and reading time which are not necessary for this kind of page.
 
 For posts listing page, add `_index.md` file inside `content\posts` folder with these front matter:
 
@@ -96,7 +97,7 @@ weight = "10"
 
 ## Categories & Tags
 
-Both can be used, also can use only one of them or neither.
+Pages can include both, either, or neither *Categories* or *Tags*.
 
 ## Images
 
