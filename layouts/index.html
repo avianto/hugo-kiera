@@ -8,7 +8,7 @@
             {{ partial "aside" . }}
             <p>{{ .Summary }}</p>
             {{ if .Truncated }}
-            <a href="{{ .RelPermalink }}">Read more&hellip;</a>
+            <a href="{{ .RelPermalink }}">{{ T "readMore" }}</a>
             {{ end }}
           </li>
           {{ end }}

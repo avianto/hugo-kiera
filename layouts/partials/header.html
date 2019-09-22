@@ -12,10 +12,15 @@
   <div id="container">
     <header>
       <h1>
-                <a href="{{ relURL "/" }}">{{ .Site.Title | markdownify }}</a>
+                <a href="{{ relLangURL "/" }}">{{ .Site.Title | markdownify }}</a>
             </h1>
 
       <ul id="social-media">
+        {{ range .Site.Languages -}}
+        {{ if ne .LanguageName $.Site.Language.LanguageName }}
+        <li><a href="/{{ .Lang }}">{{ .LanguageName }}</a></li>
+        {{ end }}
+        {{ end }}
         {{ if .Site.Author.twitter }}
         <li><a href="https://twitter.com/{{ .Site.Author.twitter }}"><i class="fab fa-twitter fa-lg" aria-hidden="true"></i></a></li>
         {{ end }} {{ if .Site.Author.linkedin }}
