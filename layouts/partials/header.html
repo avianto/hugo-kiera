@@ -4,8 +4,8 @@
 
 <head>
   <title>{{ .Site.Title }}</title>
-  {{ partial "meta" . }}
-  {{ partial "header_includes" . -}}
+  {{ partialCached "meta" . }}
+  {{ partialCached "header_includes" . -}}
 </head>
 
 <body>
@@ -35,6 +35,6 @@
       {{ end }}
     </header>
 
-    {{ partial "nav" . }}
+    {{ partialCached "nav" . }}
 
     <main>
