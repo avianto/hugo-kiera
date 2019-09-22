@@ -1,0 +1,12 @@
+[categories]
+other = "دسته‌بندی‌ها:"
+
+[readingTime]
+one = "یک دقیقه مطالعه"
+other = "{{.Count}} دقیقه مطالعه"
+
+[readMore]
+other = "ادامه…"
+
+[draft]
+other = "DRAFT"
