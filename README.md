@@ -2,10 +2,12 @@
 
 Kiera is the theme specialized in presenting writing layout like long essay or technical writing.
 
+It was originally developed by [b. avianto](https://github.com/avianto/hugo-kiera) and now maintained by [funkydan2](//github.com/funkdan2/)
+
 ## Main Features
 
 * 4 image placements with `figure` support using shortcodes.
-* Excellent code highlight support thanks to Hugo Chroma. 
+* Excellent code highlight support thanks to Hugo Chroma.
 * Use Font Awesome for icons (Cloudflare CDN)
 * Utilize normalize.css for consistent styling (Cloudflare CDN)
 * Use Google Fonts: Ruda (serif) and Roboto Slab (sans-serif)
@@ -13,15 +15,15 @@ Kiera is the theme specialized in presenting writing layout like long essay or t
 
 ## Demo
 
-Live demo: https://avianto.github.io/hugo-kiera/
+Live demo: https://themes.gohugo.io/theme/hugo-kiera/
 
-## Installation 
+## Installation
 
 Change into Hugo directory then:
 
 ```console
 $ cd themes
-$ git clone https://github.com/avianto/hugo-kiera.git kiera
+$ git clone https://github.com/funkydan2/hugo-kiera.git kiera
 ```
 
 More detailed instruction at [Hugo Docs](http://gohugo.io/themes/installing-and-using-themes/).
@@ -37,7 +39,7 @@ $ git submodule add https://github.com/avianto/hugo-kiera.git kiera
 
 For reference look inside folder `exampleSite` for content example and `config.toml`.
 
-*Important*: delete or move `archetypes` folder from root unless it is necessary. Current Hugo priority lookup will look into this folder first before any other `archetypes` folder and could cause problem.
+*Important*: don't delete or move `archetypes` folder from root unless it is necessary. Current Hugo priority lookup will look into this folder first before any other `archetypes` folder and could cause problem.
 
 Recommended optional `config.toml`:
 
@@ -146,5 +148,3 @@ Please use GitHub issues to file bugs. If you can help fixing bugs, optimize the
 * Adding some user-oriented behavior using JavaScripts.
 * Lazyload images.
 * i18n support
-
-

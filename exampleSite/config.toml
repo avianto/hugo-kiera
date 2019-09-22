@@ -1,8 +1,9 @@
 baseurl = "https://www.example.org/"
 title = "Kiera"
-copyright = "Copyright &copy; 2017 - Author Name"
+copyright = "Copyright &copy; 2019 - Author Name"
 canonifyurls = true
-theme = "kiera"
+theme = "hugo-kiera"
+themesDir = "../.."
 
 paginate = 3
 
@@ -12,14 +13,12 @@ pygmentsCodeFences = true
 
 [author]
     name = ""
-    github = ""
+    github = "funkydan2"
     gitlab = ""
     linkedin = ""
     facebook = ""
-    twitter = ""
+    twitter = "ds_says"
     instagram = ""
 
 [params]
     tagline = "A Hugo theme for creative and technical writing"
-
-

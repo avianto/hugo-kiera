@@ -6,8 +6,7 @@ weight = "20"
 meta = "false"
 +++
 
-Hugo is a static site engine written in Go.
-
+Hugo is a static site engine written in Go. <i class="far fa-clipboard"></i>
 
 It makes use of a variety of open source projects including:
 
@@ -17,4 +16,3 @@ It makes use of a variety of open source projects including:
 * [Cast](https://github.com/spf13/cast)
 
 Learn more and contribute on [GitHub](https://github.com/gohugoio).
-
