@@ -1,6 +1,6 @@
 <!doctype html>
 
-<html lang="{{ .Site.LanguageCode | default "en" }}">
+<html lang="{{ .Site.LanguageCode | default " en" }}">
 
 <head>
   <title>{{ if and (not .IsHome) (.Title) }}{{ .Params.Title }} - {{ end }}{{ .Site.Title }}</title>
@@ -13,23 +13,23 @@
     <header>
       {{ partial "site_logo" . }}
       <h1>
-        <a href="{{ relLangURL "/" }}">{{ .Site.Title | markdownify }}</a>
+        <a href="{{ relLangURL " /" }}">{{ .Site.Title | markdownify }}</a>
       </h1>
 
       <ul id="social-media">
         {{- range .Site.Languages -}}
-          {{ if ne .LanguageName $.Site.Language.LanguageName }}
-            <li><a href="/{{ .Lang }}">{{ .LanguageName }}</a></li>
-          {{ end }}
+        {{ if ne .LanguageName $.Site.Language.LanguageName }}
+        <li><a href="/{{ .Lang }}">{{ .LanguageName }}</a></li>
+        {{ end }}
         {{- end -}}
         {{- range .Site.Data.social.social_icons -}}
-          {{- if isset $.Site.Author .id }}
-             <li>
-               <a href="{{ printf .url (index $.Site.Author .id) }}" title="{{ .title }}">
-               <i class="{{ .icon }} fa-lg"></i>
-               </a>
-             </li>
-           {{- end -}}
+        {{- if isset $.Site.Author .id }}
+        <li>
+          <a href="{{ printf .url (index $.Site.Author .id) }}" title="{{ .title }}">
+            <i class="{{ .icon }} fa-lg"></i>
+          </a>
+        </li>
+        {{- end -}}
         {{ end }}
       </ul>
       {{ with .Site.Params.tagline }}
