@@ -26,7 +26,7 @@ $ cd themes
 $ git clone https://github.com/funkydan2/hugo-kiera.git kiera
 ```
 
-More detailed instruction at [Hugo Docs](http://gohugo.io/themes/installing-and-using-themes/).
+More detailed instruction at [Hugo Docs](https://gohugo.io/hosting-and-deployment/deployment-with-nanobox/#install-a-theme).
 
 Using `git submodule` is recommended instead of `git clone` as per recommendation from [Netlify](https://gohugo.io/hosting-and-deployment/hosting-on-netlify/#use-hugo-themes-with-netlify).
 
