@@ -2,7 +2,7 @@
 
 Kiera is the theme specialized in presenting writing layout like long essay or technical writing.
 
-It was originally developed by [b. avianto](https://github.com/avianto/hugo-kiera) and now maintained by [funkydan2](//github.com/funkdan2/)
+It was originally developed by [b. avianto](https://github.com/avianto/hugo-kiera) and now maintained by [funkydan2](//github.com/funkydan2/)
 
 ## Main Features
 
@@ -26,13 +26,13 @@ $ cd themes
 $ git clone https://github.com/funkydan2/hugo-kiera.git kiera
 ```
 
-More detailed instruction at [Hugo Docs](http://gohugo.io/themes/installing-and-using-themes/).
+More detailed instruction at [Hugo Docs](https://gohugo.io/getting-started/).
 
 Using `git submodule` is recommended instead of `git clone` as per recommendation from [Netlify](https://gohugo.io/hosting-and-deployment/hosting-on-netlify/#use-hugo-themes-with-netlify).
 
 ```console
 $ cd themes
-$ git submodule add https://github.com/avianto/hugo-kiera.git kiera
+$ git submodule add https://github.com/funkydan2/hugo-kiera.git kiera
 ```
 
 ## Configuration
