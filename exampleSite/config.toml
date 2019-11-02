@@ -23,3 +23,4 @@ pygmentsCodeFences = true
 [params]
     tagline = "A Hugo theme for creative and technical writing"
     customCSS = []  #Optional Customised CSS
+    favicon = ""
