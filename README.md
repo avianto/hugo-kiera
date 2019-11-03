@@ -35,6 +35,10 @@ $ cd themes
 $ git submodule add https://github.com/funkydan2/hugo-kiera.git kiera
 ```
 
+### Update the theme
+When the theme is been updated, if you're using the *submodule* method you can use `git` to merge latest commits by running `git submodule update --rebase --remote` in root directory of your project.
+
+
 ## Configuration
 
 For reference look inside folder `exampleSite` for content example and `config.toml`.
