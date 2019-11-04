@@ -22,5 +22,7 @@ pygmentsCodeFences = true
 
 [params]
     tagline = "A Hugo theme for creative and technical writing"
+    description = "Kiera: A Hugo theme for creative and technical writing."
+    #images = [""] #This is used for opengraph/twitter cards.
     customCSS = []  #Optional Customised CSS
-    favicon = ""
+    #favicon = ""
