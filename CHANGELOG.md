@@ -1,5 +1,5 @@
 # Monday, 4 November 2019
-* Fixed a small bug with displaying metadata
+* Fixed a small bug with displaying metadata. This change (of logic) will make the theme work as expected: if you set `meta = false` in frontmatter, meta data won't be displayed, if you set `meta = true` it will. However, this change may change sites which had worked around the previous bug.
 * **NEW** support for opengraph and twitter cards. You can configure the image displayed on either a per-site basis by setting `.Site.Params.images` in the config file, or on a per-page basis in the frontmatter. For more details see [the Hugo Docs](https://gohugo.io/templates/internal/#open-graph)
 
 # Sunday, 3 November 2019
