@@ -137,7 +137,7 @@ Using fenced code with Chroma support.
 
 ## Font Awesome icons
 
-For usage, refer to [Font Awesome](https://fontawesome.io).
+For usage, refer to [Font Awesome](https://fontawesome.com/).
 
 ## Disqus On Demand
 
