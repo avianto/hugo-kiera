@@ -4,18 +4,35 @@ Kiera is the theme specialized in presenting writing layout like long essay or t
 
 It was originally developed by [b. avianto](https://github.com/avianto/hugo-kiera) and now maintained by [funkydan2](//github.com/funkydan2/)
 
+- [Kiera Theme for Hugo](#kiera-theme-for-hugo)
+  - [Main Features](#main-features)
+  - [Demo](#demo)
+  - [Installation](#installation)
+  - [Update the theme](#update-the-theme)
+    - [git submodule method](#git-submodule-method)
+    - [independent directory method](#independent-directory-method)
+  - [Configuration](#configuration)
+    - [Main Menu](#main-menu)
+    - [Categories & Tags](#categories--tags)
+    - [Images](#images)
+    - [Code highlight](#code-highlight)
+    - [Font Awesome icons](#font-awesome-icons)
+    - [Disqus on demand](#disqus-on-demand)
+  - [Support and Pull Requests](#support-and-pull-requests)
+  - [TO DO](#to-do)
+
 ## Main Features
 
-* 4 image placements with `figure` support using shortcodes.
-* Excellent code highlight support thanks to Hugo Chroma.
-* Use Font Awesome for icons (Cloudflare CDN)
-* Utilize normalize.css for consistent styling (Cloudflare CDN)
-* Use Google Fonts: Ruda (serif) and Roboto Slab (sans-serif)
-* Disqus comment loaded on demand
+- 4 image placements with `figure` support using shortcodes.
+- Excellent code highlight support thanks to Hugo Chroma.
+- Use Font Awesome for icons (Cloudflare CDN)
+- Utilize normalize.css for consistent styling (Cloudflare CDN)
+- Use Google Fonts: Ruda (serif) and Roboto Slab (sans-serif)
+- Disqus comment loaded on demand
 
 ## Demo
 
-Live demo: https://themes.gohugo.io/theme/hugo-kiera/
+Live demo: [https://themes.gohugo.io/theme/hugo-kiera/](https://themes.gohugo.io/theme/hugo-kiera/)
 
 ## Installation
 
@@ -35,9 +52,26 @@ $ cd themes
 $ git submodule add https://github.com/funkydan2/hugo-kiera.git kiera
 ```
 
-### Update the theme
-When the theme is been updated, if you're using the *submodule* method you can use `git` to merge latest commits by running `git submodule update --rebase --remote` in root directory of your project.
+## Update the theme
 
+### git submodule method
+
+Use `git` to merge latest commits into your project by running:
+
+```bash
+$ cd /path/to/the/root/of/your/project/
+$ git submodule update --rebase --remote`
+```
+
+### independent directory method
+
+Delete the directory corresponding to the theme and download the latest version of the theme by cloning the repo:
+
+```bash
+$ cd /path/to/the/root/of/your/project/
+$ rm -rf themes/hugo-kiera/
+$ git clone https://github.com/funkydan2/hugo-kiera.git themes/hugo-kiera/
+```
 
 ## Configuration
 
@@ -67,9 +101,9 @@ googleAnalytics = "" #Google Analytics ID
     customCSS = []  #Optional Customised CSS
 ```
 
-## Main Menu
+### Main Menu
 
-Add regular non-posts related page (eq. About page) to main menu by adding these lines to the page front matter:
+Add regular non-posts related page (eq. About page) to the main menu by adding these lines to the page front matter:
 
 TOML:
 
@@ -99,11 +133,11 @@ weight = "10"
 +++
 ```
 
-## Categories & Tags
+### Categories & Tags
 
 Pages can include both, either, or neither *Categories* or *Tags*.
 
-## Images
+### Images
 
 Kiera supports adding image as `img` tag with standard Markdown:
 
@@ -117,31 +151,31 @@ The basic placement is 100% width within content and scaled accordingly in small
 
 Kiera supports different placement by adding:
 
-* For `img`, use `![Image Title](link/to/image#placement)`
-* For `figure`, use `{{< figure src="/link/to/image" class="placement" >}}`
+- For `img`, use `![Image Title](link/to/image#placement)`
+- For `figure`, use `{{< figure src="/link/to/image" class="placement" >}}`
 
 There are 4 configured placements
 
-* `#full` or `class="full"` for full width.
-![](images/screenshots/full-image.png)
-* `#mid` or `class="mid"` for middle:
-![](images/screenshots/mid.png)
-* `#float` or `class="float"` for float left:
-![](images/screenshots/float-left.png)
-* `#float-right` or `class="float-right"` for float right:
-![](images/screenshots/float-right.png)
+- `#full` or `class="full"` for full width.
+![full](images/screenshots/full-image.png)
+- `#mid` or `class="mid"` for middle:
+![float-mid](images/screenshots/mid.png)
+- `#float` or `class="float"` for float left:
+![float-left](images/screenshots/float-left.png)
+- `#float-right` or `class="float-right"` for float right:
+![float-right](images/screenshots/float-right.png)
 
-## Code Hightlight
+### Code highlight
 
 Using fenced code with Chroma support.
 
-## Font Awesome icons
+### Font Awesome icons
 
 For usage, refer to [Font Awesome](https://fontawesome.com/).
 
-## Disqus On Demand
+### Disqus on demand
 
-Disqus comments are loaded on demand, by clicking <kbd>View Comments</kbd> button.
+[Disqus](https://disqus.com/) comments are loaded on demand, by clicking the <kbd>View Comments</kbd> button.
 
 ## Support and Pull Requests
 
@@ -149,7 +183,7 @@ Please use GitHub issues to file bugs. If you can help fixing bugs, optimize the
 
 ## TO DO
 
-* /layout/_default/terms.html needs some works, it functions now, barely.
-* Adding some user-oriented behavior using JavaScripts.
-* Lazyload images.
-* i18n support
+- `/layout/_default/terms.html` needs some works, it functions now, barely.
+- Adding some user-oriented behavior using JavaScripts.
+- Lazyload images.
+- i18n support.
