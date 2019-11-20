@@ -1,27 +1,27 @@
-# 1. Kiera Theme for Hugo
+# Kiera Theme for Hugo
 
 Kiera is the theme specialized in presenting writing layout like long essay or technical writing.
 
 It was originally developed by [b. avianto](https://github.com/avianto/hugo-kiera) and now maintained by [funkydan2](//github.com/funkydan2/)
 
-- [1. Kiera Theme for Hugo](#1-kiera-theme-for-hugo)
-  - [1.1. Main Features](#11-main-features)
-  - [1.2. Demo](#12-demo)
-  - [1.3. Installation](#13-installation)
-  - [1.4. Update the theme](#14-update-the-theme)
-    - [1.4.1. git submodule method](#141-git-submodule-method)
-    - [1.4.2. independent directory method](#142-independent-directory-method)
-  - [1.5. Configuration](#15-configuration)
-    - [1.5.1. Main Menu](#151-main-menu)
-    - [1.5.2. Categories & Tags](#152-categories--tags)
-    - [1.5.3. Images](#153-images)
-    - [1.5.4. Code highlight](#154-code-highlight)
-    - [1.5.5. Font Awesome icons](#155-font-awesome-icons)
-    - [1.5.6. Disqus on demand](#156-disqus-on-demand)
-    - [1.5.7. Support and Pull Requests](#157-support-and-pull-requests)
-  - [1.6. TO DO](#16-to-do)
+- [Kiera Theme for Hugo](#kiera-theme-for-hugo)
+  - [Main Features](#main-features)
+  - [Demo](#demo)
+  - [Installation](#installation)
+  - [Update the theme](#update-the-theme)
+    - [git submodule method](#git-submodule-method)
+    - [independent directory method](#independent-directory-method)
+  - [Configuration](#configuration)
+    - [Main Menu](#main-menu)
+    - [Categories & Tags](#categories--tags)
+    - [Images](#images)
+    - [Code highlight](#code-highlight)
+    - [Font Awesome icons](#font-awesome-icons)
+    - [Disqus on demand](#disqus-on-demand)
+  - [Support and Pull Requests](#support-and-pull-requests)
+  - [TO DO](#to-do)
 
-## 1.1. Main Features
+## Main Features
 
 - 4 image placements with `figure` support using shortcodes.
 - Excellent code highlight support thanks to Hugo Chroma.
@@ -30,11 +30,11 @@ It was originally developed by [b. avianto](https://github.com/avianto/hugo-kier
 - Use Google Fonts: Ruda (serif) and Roboto Slab (sans-serif)
 - Disqus comment loaded on demand
 
-## 1.2. Demo
+## Demo
 
 Live demo: [https://themes.gohugo.io/theme/hugo-kiera/](https://themes.gohugo.io/theme/hugo-kiera/)
 
-## 1.3. Installation
+## Installation
 
 Change into Hugo directory then:
 
@@ -52,9 +52,9 @@ $ cd themes
 $ git submodule add https://github.com/funkydan2/hugo-kiera.git kiera
 ```
 
-## 1.4. Update the theme
+## Update the theme
 
-### 1.4.1. git submodule method
+### git submodule method
 
 Use `git` to merge latest commits into your project by running:
 
@@ -63,7 +63,7 @@ $ cd /path/to/the/root/of/your/project/
 $ git submodule update --rebase --remote`
 ```
 
-### 1.4.2. independent directory method
+### independent directory method
 
 Delete the directory corresponding to the theme and download the latest version of the theme by cloning the repo:
 
@@ -73,7 +73,7 @@ $ rm -rf themes/hugo-kiera/
 $ git clone https://github.com/funkydan2/hugo-kiera.git themes/hugo-kiera/
 ```
 
-## 1.5. Configuration
+## Configuration
 
 For reference look inside folder `exampleSite` for content example and `config.toml`.
 
@@ -101,7 +101,7 @@ googleAnalytics = "" #Google Analytics ID
     customCSS = []  #Optional Customised CSS
 ```
 
-### 1.5.1. Main Menu
+### Main Menu
 
 Add regular non-posts related page (eq. About page) to the main menu by adding these lines to the page front matter:
 
@@ -133,11 +133,11 @@ weight = "10"
 +++
 ```
 
-### 1.5.2. Categories & Tags
+### Categories & Tags
 
 Pages can include both, either, or neither *Categories* or *Tags*.
 
-### 1.5.3. Images
+### Images
 
 Kiera supports adding image as `img` tag with standard Markdown:
 
@@ -165,23 +165,23 @@ There are 4 configured placements
 - `#float-right` or `class="float-right"` for float right:
 ![float-right](images/screenshots/float-right.png)
 
-### 1.5.4. Code highlight
+### Code highlight
 
 Using fenced code with Chroma support.
 
-### 1.5.5. Font Awesome icons
+### Font Awesome icons
 
 For usage, refer to [Font Awesome](https://fontawesome.com/).
 
-### 1.5.6. Disqus on demand
+### Disqus on demand
 
 [Disqus](https://disqus.com/) comments are loaded on demand, by clicking the <kbd>View Comments</kbd> button.
 
-### 1.5.7. Support and Pull Requests
+## Support and Pull Requests
 
 Please use GitHub issues to file bugs. If you can help fixing bugs, optimize the theme or adding features, please do pull requests, I really love to see what others can come up with.
 
-## 1.6. TO DO
+## TO DO
 
 - `/layout/_default/terms.html` needs some works, it functions now, barely.
 - Adding some user-oriented behavior using JavaScripts.
