@@ -1,3 +1,6 @@
+# Thursday, 21 November 2019
+* Added support for a [stackoverflow](//stackoverflow.com) icon and link (thanks @alfredcambera)
+
 # Thursday, 7 November 2019
 Changed the custom RSS feed so it only includes pages from mainSection. This will mean the feed emulates the content of the front page.
 
