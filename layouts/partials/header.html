@@ -33,6 +33,8 @@
         <li><a href="https://www.facebook.com/{{ .Site.Author.facebook }}"><i class="fab fa-facebook fa-lg" aria-hidden="true"></i></a></li>
         {{ end }} {{ if .Site.Author.instagram }}
         <li><a href="https://instagram.com/{{ .Site.Author.instagram }}"><i class="fab fa-instagram fa-lg" aria-hidden="true"></i></a></li>
+        {{ end }} {{ if .Site.Author.stackoverflow }}
+        <li><a href="https://stackoverflow.com/users/{{ .Site.Author.stackoverflow }}"><i class="fab fa-stack-overflow fa-lg" aria-hidden="true"></i></a></li>
         {{ end }}
       </ul>
       {{ with .Site.Params.tagline }}
