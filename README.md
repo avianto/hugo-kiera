@@ -19,7 +19,6 @@ It was originally developed by [b. avianto](https://github.com/avianto/hugo-kier
     - [Font Awesome icons](#font-awesome-icons)
     - [Disqus on demand](#disqus-on-demand)
   - [Support and Pull Requests](#support-and-pull-requests)
-  - [TO DO](#to-do)
 
 ## Main Features
 
