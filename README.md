@@ -181,10 +181,3 @@ For usage, refer to [Font Awesome](https://fontawesome.com/).
 ## Support and Pull Requests
 
 Please use GitHub issues to file bugs. If you can help fixing bugs, optimize the theme or adding features, please do pull requests, I really love to see what others can come up with.
-
-## TO DO
-
-- `/layout/_default/terms.html` needs some works, it functions now, barely.
-- Adding some user-oriented behavior using JavaScripts.
-- Lazyload images.
-- i18n support.
