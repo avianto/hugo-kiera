@@ -3,7 +3,6 @@ title = "Kiera"
 copyright = "Copyright &copy; 2019 - Author Name"
 canonifyurls = true
 theme = "hugo-kiera"
-themesDir = "../.."
 
 paginate = 3
 
