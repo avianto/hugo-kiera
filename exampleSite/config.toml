@@ -12,14 +12,15 @@ enableEmoji = true
 pygmentsCodeFences = true
 
 [author]
-    name = ""
+    name = "Example"
     github = "funkydan2"
-    gitlab = ""
-    linkedin = ""
-    facebook = ""
+    #gitlab = "username"
+    #linkedin = "username"
+    #facebook = "username"
     twitter = "ds_says"
-    instagram = ""
-    stackoverflow = ""
+    #instagram = "username"
+    #stackoverflow = "username"
+    #youtube = "user/username" # or channel/channelname
 
 [params]
     tagline = "A Hugo theme for creative and technical writing"
