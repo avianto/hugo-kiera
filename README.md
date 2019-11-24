@@ -4,6 +4,8 @@ Kiera is the theme specialized in presenting writing layout like long essay or t
 
 It was originally developed by [b. avianto](https://github.com/avianto/hugo-kiera) and now maintained by [funkydan2](//github.com/funkydan2/)
 
+![Screenshot](https://github.com/funkydan2/hugo-kiera/raw/master/images/screenshot.png)
+
 - [Kiera Theme for Hugo](#kiera-theme-for-hugo)
   - [Main Features](#main-features)
   - [Demo](#demo)
@@ -136,6 +138,7 @@ weight = "10"
 ### Categories & Tags
 
 Pages can include both, either, or neither *Categories* or *Tags*.
+To link to tags use the url `/tags/` (e.g. `https://example.com/tags/`) and `/categories/` for categories.
 
 ### Images
 
