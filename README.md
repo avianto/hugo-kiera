@@ -41,7 +41,7 @@ Change into Hugo directory then:
 
 ```console
 $ cd themes
-$ git clone https://github.com/funkydan2/hugo-kiera.git kiera
+$ git clone https://github.com/funkydan2/hugo-kiera.git hugo-kiera
 ```
 
 More detailed instruction at [Hugo Docs](https://gohugo.io/getting-started/).
@@ -49,8 +49,8 @@ More detailed instruction at [Hugo Docs](https://gohugo.io/getting-started/).
 Using `git submodule` is recommended instead of `git clone` as per recommendation from [Netlify](https://gohugo.io/hosting-and-deployment/hosting-on-netlify/#use-hugo-themes-with-netlify).
 
 ```console
-$ cd themes
-$ git submodule add https://github.com/funkydan2/hugo-kiera.git kiera
+$ cd /path/to/the/root/of/your/project/themes
+$ git submodule add https://github.com/funkydan2/hugo-kiera.git
 ```
 
 ## Update the theme
@@ -61,7 +61,7 @@ Use `git` to merge latest commits into your project by running:
 
 ```bash
 $ cd /path/to/the/root/of/your/project/
-$ git submodule update --rebase --remote`
+$ git submodule update --rebase --remote
 ```
 
 ### independent directory method

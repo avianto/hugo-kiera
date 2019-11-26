@@ -10,6 +10,7 @@ summaryLength = 30
 enableEmoji = true
 pygmentsCodeFences = true
 
+# Note: to disable a social network icon delete the corresponding line
 [author]
     name = "Example"
     github = "funkydan2"
