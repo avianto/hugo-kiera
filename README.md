@@ -105,7 +105,7 @@ googleAnalytics = "" #Google Analytics ID
 
 ### Main Menu
 
-Add regular non-posts related page (eq. About page) to the main menu by adding these lines to the page front matter:
+To add non-posts related page (eq. About page) to the main menu, adding these lines to the page [front matter](https://gohugo.io/content-management/front-matter/):
 
 TOML:
 
@@ -128,11 +128,18 @@ For posts listing page, add `_index.md` file inside `content\posts` folder with 
 TOML:
 
 ```toml
-+++
 title = "Posts"
 menu = "main"
 weight = "10"
-+++
+```
+
+
+YAML:
+
+```yml
+title : "Posts"
+menu : "main"
+weight : "10"
 ```
 
 ### Categories & Tags
