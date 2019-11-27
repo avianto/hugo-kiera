@@ -28,3 +28,17 @@ pygmentsCodeFences = true
     #images = [""] #This is used for opengraph/twitter cards.
     customCSS = []  #Optional Customised CSS
     #favicon = ""
+
+# uncomment to enable the Tags link on the main toolbar
+#  [[menu.main]]
+#    identifier = "tags"
+#    name = "Tags"
+#    url = "tags"
+#    weight = 1
+
+# uncomment to enable the Categories link on the main toolbar
+#  [[menu.main]]
+#    identifier = "categories"
+#    name = "Categories"
+#    url = "categories"
+#    weight = 1
