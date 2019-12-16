@@ -388,8 +388,9 @@ blockquote {
 
 blockquote::before {
   content: "\f10d";
+  font-family: "Font Awesome 5 Free";
+  font-weight: 900;
   font-size: 3em;
-  font-family: "FontAwesome";
   color: rgba(192, 192, 192, 0.3);
   position: absolute;
   left: 6px;
