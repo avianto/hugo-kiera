@@ -23,10 +23,10 @@ It was originally developed by [b. avianto](https://github.com/avianto/hugo-kier
   - [Support and Pull Requests](#support-and-pull-requests)
 
 ## Main Features
-
+- Simple, 'no-nonsense' styling.
 - 4 image placements with `figure` support using shortcodes.
 - Excellent code highlight support thanks to Hugo Chroma.
-- Use Font Awesome for icons (Cloudflare CDN)
+- Use Font Awesome for icons
 - Utilize normalize.css for consistent styling (Cloudflare CDN)
 - Use Google Fonts: Ruda (serif) and Roboto Slab (sans-serif)
 - Disqus comment loaded on demand
