@@ -1,0 +1,20 @@
+<div id="utterances"></div>
+<script>
+    if (window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches) {
+        let s = document.createElement("script");
+        s.setAttribute("repo", "{{ .Site.Params.UtterancesRepo }}");
+        s.src = "https://utteranc.es/client.js";
+        s.setAttribute("issue-term", "{{ .Site.Params.UtterancesIssueTerm }}");
+        s.setAttribute("theme", "{{ .Site.Params.UtterancesDarkTheme }}")
+        document.getElementById("utterances").innerHTML = "";
+        document.getElementById("utterances").appendChild(s);
+    } else {
+        let s = document.createElement("script");
+        s.setAttribute("repo", "{{ .Site.Params.UtterancesRepo }}");
+        s.src = "https://utteranc.es/client.js";
+        s.setAttribute("issue-term", "{{ .Site.Params.UtterancesIssueTerm }}");
+        s.setAttribute("theme", "{{ .Site.Params.UtterancesLightTheme }}")
+        document.getElementById("utterances").innerHTML = "";
+        document.getElementById("utterances").appendChild(s);
+    }
+</script>
