@@ -4,7 +4,7 @@ body {
   overflow-x: hidden;
   font-family: "Roboto Slab", serif;
   color: #ffffff;
-  background: #000000;
+  background: #2A2829;
 }
 
 h1,
@@ -147,7 +147,7 @@ time {
   font-size: 0.9em;
 }
 
-#container main article pre {
+#container main article > pre {
   background-color: #ffffcc;
   overflow-x: auto;
   padding: 0.8em;

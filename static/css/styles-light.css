@@ -146,7 +146,7 @@ time {
   font-size: 0.9em;
 }
 
-#container main article pre {
+#container main article > pre {
   background-color: #ffffcc;
   overflow-x: auto;
   padding: 0.8em;
