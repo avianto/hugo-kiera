@@ -2,7 +2,7 @@
 title = "Image Style Guide"
 date = 2017-11-14T08:08:17-05:00
 tags = []
-categories = []
+categories = ["Images"]
 +++
 
 Veniam est eu adipisicing reprehenderit do sit sint elit sint. Tempor laborum ut dolore aliqua. Commodo eu qui sint magna veniam laborum. Ad cupidatat do proident ex veniam amet Lorem. Officia laboris aute fugiat id consequat culpa ullamco labore ea amet ad. Occaecat quis dolor commodo pariatur cillum et id id cupidatat officia.

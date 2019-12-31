@@ -1,18 +1,19 @@
 {{ define "main" }}
 
 <section id="home">
-        <ul>
-          {{ range $index, $page := first 10 (where site.RegularPages "Section" "in" .Site.Params.mainSections) }}
-          <li {{if eq $index 0}}class="first"{{end}}>
-            <h1><a href="{{ .Permalink }}" title="{{ .Title }}">{{ .Title }}</a></h1>
-            {{ partial "aside" . }}
-            <p>{{ .Summary }}</p>
-            {{ if .Truncated }}
-            <a href="{{ .RelPermalink }}">{{ T "readMore" }}</a>
-            {{ end }}
-          </li>
-          {{ end }}
-        </ul>
-      </section>
+  <ul>
+    {{ range $index, $page := first 10 (where site.RegularPages "Section" "in" .Site.Params.mainSections) }}
+    <li {{if eq $index 0}}class="first" {{end}}>
+      <h1><a href="{{ .Permalink }}" title="{{ .Title }}">{{ .Title }}</a></h1>
+      {{ partial "aside" . }}
+      {{ partial "featured_image" .}}
+      <p>{{ .Summary }}</p>
+      {{ if .Truncated }}
+      <a href="{{ .RelPermalink }}">{{ T "readMore" }}</a>
+      {{ end }}
+    </li>
+    {{ end }}
+  </ul>
+</section>
 
 {{ end }}

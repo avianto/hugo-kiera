@@ -2,7 +2,7 @@
 date: 2014-03-10
 linktitle: Migrating from Jekyll
 title: Migrate to Hugo from Jekyll
-image: ""
+images: ""
 ---
 
 ## Move static content to `static`
