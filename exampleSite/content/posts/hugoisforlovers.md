@@ -12,7 +12,7 @@ categories = [
     "Development",
     "golang",
 ]
-image = ""
+images = ""
 +++
 
 ## Step 1. Install Hugo
