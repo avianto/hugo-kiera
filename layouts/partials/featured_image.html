@@ -1,0 +1,7 @@
+{{if isset .Params "featured_image" }}
+<div class="featured_image">
+    <a href="{{ .Permalink }}" title="{{ .Title }}">
+        <img src="{{ index .Params "featured_image" }}">
+    </a>
+</div>
+{{ end }}
