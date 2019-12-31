@@ -25,11 +25,12 @@ It was originally developed by [b. avianto](https://github.com/avianto/hugo-kier
 ## Main Features
 - Simple, 'no-nonsense' styling.
 - 4 image placements with `figure` support using shortcodes.
+- (Optional) Feature images for posts and twiter cards.
 - Excellent code highlight support thanks to Hugo Chroma.
-- Use Font Awesome for icons
-- Utilize normalize.css for consistent styling (Cloudflare CDN)
-- Use Google Fonts: Ruda (serif) and Roboto Slab (sans-serif)
-- Disqus comment loaded on demand
+- Use Font Awesome for icons.
+- Utilize normalize.css for consistent styling (Cloudflare CDN).
+- Use Google Fonts: Ruda (serif) and Roboto Slab (sans-serif).
+- [Disqus](https://disqus.com) or [Utterances](https://utteranc.es) comments loaded on demand.
 
 ## Demo
 
