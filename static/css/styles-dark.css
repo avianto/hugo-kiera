@@ -148,7 +148,7 @@ time {
 }
 
 #container main article > pre {
-  background-color: #ffffcc;
+  background-color: #a0a04b;
   overflow-x: auto;
   padding: 0.8em;
   font-size: 0.9em;
@@ -161,7 +161,7 @@ time {
 
 #container main article p code {
   padding: 0.2em;
-  background-color: #ffcccc;
+  background-color: #d03232;
   font-size: 0.9em;
 }
 
@@ -380,11 +380,11 @@ table thead {
 
 blockquote {
   margin: 1em;
-  border-left: solid 0.1em #cecece;
+  border-left: solid 0.1em #797979;
   padding: 0.5em 2em;
   position: relative;
-  background-color: #efefef;
-  box-shadow: 0 -1px 0 #bbbbbb inset;
+  background-color: #3e3b3c;
+  box-shadow: 0 -1px 0 #797979 inset;
 }
 
 blockquote::before {
