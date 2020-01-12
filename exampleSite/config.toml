@@ -33,12 +33,12 @@ pygmentsCodeFences = true
 #  [[menu.main]]
 #    identifier = "tags"
 #    name = "Tags"
-#    url = "tags"
+#    url = "/tags"
 #    weight = 1
 
 # uncomment to enable the Categories link on the main toolbar
 #  [[menu.main]]
 #    identifier = "categories"
 #    name = "Categories"
-#    url = "categories"
+#    url = "/categories"
 #    weight = 1
