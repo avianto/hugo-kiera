@@ -1,8 +1,9 @@
 +++
 title = "Style Guide"
 date = 2017-11-14T10:57:55-05:00
-tags = []
+tags = ["Layout"]
 categories = []
+meta = true
 +++
 
 # Headings

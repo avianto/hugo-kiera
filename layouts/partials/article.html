@@ -2,11 +2,12 @@
 
     <h1>{{ .Title }}</h1>
 
-    {{ if or (not (isset .Params "meta")) (eq .Params "meta" true) }}
-    {{ partial "aside" . }}
-    {{ partial "featured_image" .}}
+    {{ if or (not (isset .Params "meta")) (eq .Params.meta true) }}
+      {{ partial "aside" . }}
     {{ end }}
 
-    {{.Content}}
+    {{ partial "featured_image" . }}
+
+    {{ .Content }}
 
 </article>
