@@ -4,6 +4,7 @@ body {
   overflow-x: hidden;
   font-family: "Roboto Slab", serif;
   color: #333333;
+  background-color: #F5F5FF;
 }
 
 h1,
@@ -14,6 +15,10 @@ h5,
 h6,
 time {
   font-family: "Ruda", sans-serif;
+}
+
+h1 a {
+  color: #000000;
 }
 
 #container {
