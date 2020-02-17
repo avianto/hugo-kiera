@@ -2,18 +2,18 @@
 <script>
     if (window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches) {
         let s = document.createElement("script");
-        s.setAttribute("repo", "{{ .Site.Params.UtterancesRepo }}");
+        s.setAttribute("repo", "{{ .Site.Params.utterancesRepo }}");
         s.src = "https://utteranc.es/client.js";
-        s.setAttribute("issue-term", "{{ .Site.Params.UtterancesIssueTerm }}");
-        s.setAttribute("theme", "{{ .Site.Params.UtterancesDarkTheme }}")
+        s.setAttribute("issue-term", "{{ .Site.Params.utterancesIssueTerm }}");
+        s.setAttribute("theme", "{{ .Site.Params.utterancesDarkTheme }}")
         document.getElementById("utterances").innerHTML = "";
         document.getElementById("utterances").appendChild(s);
     } else {
         let s = document.createElement("script");
-        s.setAttribute("repo", "{{ .Site.Params.UtterancesRepo }}");
+        s.setAttribute("repo", "{{ .Site.Params.utterancesRepo }}");
         s.src = "https://utteranc.es/client.js";
-        s.setAttribute("issue-term", "{{ .Site.Params.UtterancesIssueTerm }}");
-        s.setAttribute("theme", "{{ .Site.Params.UtterancesLightTheme }}")
+        s.setAttribute("issue-term", "{{ .Site.Params.utterancesIssueTerm }}");
+        s.setAttribute("theme", "{{ .Site.Params.utterancesLightTheme }}")
         document.getElementById("utterances").innerHTML = "";
         document.getElementById("utterances").appendChild(s);
     }
