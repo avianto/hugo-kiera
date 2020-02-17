@@ -10,7 +10,7 @@ summaryLength = 30
 enableEmoji = true
 pygmentsCodeFences = true
 
-#disqusShortname = myShortName
+#disqusShortname = "myShortName"
 
 # Note: to disable a social network icon delete or comment out the corresponding line
 [author]
@@ -30,7 +30,8 @@ pygmentsCodeFences = true
     #images = [""] #This is used for opengraph/twitter cards.
     customCSS = []  #Optional Customised CSS
     #favicon = ""
-    #utterancesRepo = https://github.com/MyRepo
+    #utterancesRepo = "https://github.com/MyRepo"
+    #utterancesIssueTerm = "pathname"
 
 # uncomment to enable the Tags link on the main toolbar
 #  [[menu.main]]
