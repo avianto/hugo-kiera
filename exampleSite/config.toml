@@ -32,6 +32,7 @@ pygmentsCodeFences = true
     #favicon = ""
     #utterancesRepo = "https://github.com/MyRepo"
     #utterancesIssueTerm = "pathname"
+    #homepageLength = 10
 
 # uncomment to enable the Tags link on the main toolbar
 #  [[menu.main]]

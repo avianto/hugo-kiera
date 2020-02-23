@@ -2,7 +2,11 @@
 
 <section id="home">
   <ul>
-    {{ range $index, $page := first 10 (where site.RegularPages "Section" "in" .Site.Params.mainSections) }}
+    {{ $hp_length := 10 }}
+    {{ if isset .Site.Params "homepagelength" }}
+      {{ $hp_length = .Site.Params.homepageLength }}
+    {{ end }}
+    {{ range $index, $page := first $hp_length (where site.RegularPages "Section" "in" .Site.Params.mainSections) }}
     <li {{if eq $index 0}}class="first" {{end}}>
       <h1><a href="{{ .Permalink }}" title="{{ .Title }}">{{ .Title }}</a></h1>
       {{ partial "aside" . }}
