@@ -2,8 +2,6 @@
 
 <section id="list">
 
-    {{ $baseurl := .Site.BaseURL }}
-
     {{ if eq .Data.Singular "tag" }}
         <h2>#{{ .Title | lower }}</h2>
     {{ else }}
@@ -23,7 +21,7 @@
         </li>
         {{ end }}
     </ul>
-    
+
     {{ end }}
 
 </section>
