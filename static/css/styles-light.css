@@ -154,6 +154,12 @@ time {
   box-shadow: 0 -1px 0 #bbbbbb inset;
 }
 
+#container main article .highlight pre {
+  overflow-x: auto;
+  font-size: 0.9em;
+  padding: 0.8em;
+}
+
 #container main article pre code {
   font-size: 0.9em;
 }
