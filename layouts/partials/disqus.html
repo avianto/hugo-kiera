@@ -15,8 +15,14 @@
             var disqus_shortname = '{{ .Site.DisqusShortname }}';
             var disqus_button = document.getElementById("show-comments");
 
+            var disqus_autoload = {{ .Site.Params.CommentAutoload }};
             disqus_button.style.display = "";
-            disqus_button.addEventListener("click", disqus, false);
+
+            if (disqus_autoload){
+                  disqus();
+            }else{
+                  disqus_button.addEventListener("click", disqus, false);
+            }
 
             function disqus() {
 

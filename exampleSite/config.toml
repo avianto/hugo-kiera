@@ -33,6 +33,7 @@ pygmentsCodeFences = true
     #utterancesRepo = "username/repository"
     #utterancesIssueTerm = "pathname"
     #homepageLength = 10
+    #commentAutoload = true  #This mean reader don't need click, disqus comment autoload
 
 # uncomment to enable the Tags link on the main toolbar
 #  [[menu.main]]
