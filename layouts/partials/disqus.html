@@ -1,3 +1,4 @@
+{{ if not .Params.disableComments }}
 <section class="comments-block">
       <button id="show-comments" style="display: none;"><i class="fa fa-comments-o"></i> Add/View Comments</button>
 </section>
@@ -50,3 +51,4 @@
             }
       })();
 </script>
+{{ end }}
