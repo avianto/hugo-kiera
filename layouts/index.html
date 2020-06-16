@@ -2,13 +2,12 @@
 
 <section id="home">
   <ul>
-    {{ $hp_length := 10 }}
-    {{ if isset .Site.Params "homepagelength" }}
-      {{ $hp_length = .Site.Params.homepageLength }}
-    {{ end }}
-    {{ range $index, $page := first $hp_length (where site.RegularPages "Section" "in" .Site.Params.mainSections) }}
+    {{ $pages := where site.RegularPages "Type" "posts" }}
+    {{ $paginator := .Paginate $pages }}
+    {{ range $index, $page := $paginator.Pages }}
+
     <li {{if eq $index 0}}class="first" {{end}}>
-      <h1><a href="{{ .Permalink }}" title="{{ .Title }}">{{ .Title }}</a></h1>
+      <h1><a href="{{ $page.Permalink }}" title="{{ $page.Title }}">{{ .Title }}</a></h1>
       {{ partial "aside" . }}
       {{ partial "featured_image" .}}
       <p>{{ .Summary }}</p>
@@ -19,5 +18,7 @@
     {{ end }}
   </ul>
 </section>
+
+{{ template "_internal/pagination.html" . }}
 
 {{ end }}
