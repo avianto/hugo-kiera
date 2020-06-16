@@ -16,6 +16,11 @@
             var disqus_button = document.getElementById("show-comments");
 
             var disqus_autoload = {{ .Site.Params.CommentAutoload }};
+            var disable_comment = {{ .Params.disable_comments }};
+
+            if (disable_comment)
+                  return;
+
             disqus_button.style.display = "";
 
             if (disqus_autoload){
