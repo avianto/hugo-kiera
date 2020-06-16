@@ -187,7 +187,11 @@ For usage, refer to [Font Awesome](https://fontawesome.com/).
 
 ### Disqus on demand
 
-[Disqus](https://disqus.com/) comments are loaded on demand, by clicking the <kbd>View Comments</kbd> button.
+[Disqus](https://disqus.com/) comments are loaded on demand, by clicking the <kbd>View Comments</kbd> button. Disqus comments can be automatically loaded and displayed by setting `CommentAutoload = true` in `config.toml`.
+
+[Utterances](https://utteranc.es), a Git based comment system, is also available. Utterance comments are loaded and displayed by default.
+
+Comments can be disabled for a single page by setting `disableComments = true` in the page frontmatter.
 
 ## Support and Pull Requests
 
