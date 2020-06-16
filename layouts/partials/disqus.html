@@ -15,8 +15,8 @@
             var disqus_shortname = '{{ .Site.DisqusShortname }}';
             var disqus_button = document.getElementById("show-comments");
 
-            var disqus_autoload = {{ .Site.Params.CommentAutoload }};
-            var disable_comment = {{ .Params.disable_comments }};
+            var disqus_autoload = {{ .Site.Params.commentAutoload }};
+            var disable_comment = {{ .Params.disableComments }};
 
             if (disable_comment)
                   return;
