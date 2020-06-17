@@ -19,7 +19,7 @@ It was originally developed by [b. avianto](https://github.com/avianto/hugo-kier
     - [Images](#images)
     - [Code highlight](#code-highlight)
     - [Font Awesome icons](#font-awesome-icons)
-    - [Disqus on demand](#disqus-on-demand)
+    - [Commenting](#static-commenting)
   - [Support and Pull Requests](#support-and-pull-requests)
 
 ## Main Features
@@ -185,7 +185,7 @@ Using fenced code with Chroma support.
 
 For usage, refer to [Font Awesome](https://fontawesome.com/).
 
-### Disqus on demand
+### Static Commenting
 
 [Disqus](https://disqus.com/) comments are loaded on demand, by clicking the <kbd>View Comments</kbd> button. Disqus comments can be automatically loaded and displayed by setting `CommentAutoload = true` in `config.toml`.
 
