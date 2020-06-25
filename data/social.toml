@@ -167,3 +167,9 @@ id = "strava"
 url = "https://www.strava.com/athletes/%s"
 title = "Strava"
 icon = "fab fa-strava"
+
+[[social_icons]]
+id = "orcid"
+url = "https://orcid.org/%s"
+title = "ORCiD"
+icon = "fab fa-orcid"
