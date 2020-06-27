@@ -34,6 +34,7 @@ pygmentsCodeFences = true
     #utterancesIssueTerm = "pathname"
     #homepageLength = 10
     #commentAutoload = true  #This mean reader don't need click, disqus comment autoload
+    #mathjax = true #Enable display of mathematics using mathjax (LaTeX syntax)
 
 # uncomment to enable the Tags link on the main toolbar
 #  [[menu.main]]

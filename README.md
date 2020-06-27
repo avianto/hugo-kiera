@@ -19,6 +19,7 @@ It was originally developed by [b. avianto](https://github.com/avianto/hugo-kier
     - [Images](#images)
     - [Code highlight](#code-highlight)
     - [Font Awesome icons](#font-awesome-icons)
+    - [Mathematics](#mathematics)
     - [Commenting](#static-commenting)
   - [Support and Pull Requests](#support-and-pull-requests)
 
@@ -184,6 +185,10 @@ Using fenced code with Chroma support.
 ### Font Awesome icons
 
 For usage, refer to [Font Awesome](https://fontawesome.com/).
+
+### Mathematics
+
+Set `Params.mathjax` to true to enable support of mathematics display using [MathJax](https://mathjax.org/).  Math should be, by default, surrounded by dollar signs and produced using LaTeX syntax.  Options may be overriden using `static/js/mathjax-config.js`.
 
 ### Static Commenting
 
