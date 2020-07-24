@@ -100,6 +100,7 @@ googleAnalytics = "" #Google Analytics ID
     twitter = ""        #Twitter username
     instagram = ""      #Instagram username
     stackoverflow = ""  #StackOverflow username
+    devto = ""          #Dev.to username 
 
 [params]
     tagline = "the tagline for this website"

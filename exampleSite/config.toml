@@ -23,6 +23,7 @@ pygmentsCodeFences = true
     #instagram = "username"
     #stackoverflow = "username"
     #youtube = "user/username" # or channel/channelname
+    #devto = "username"
 
 [params]
     tagline = "A Hugo theme for creative and technical writing"

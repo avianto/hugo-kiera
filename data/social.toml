@@ -173,3 +173,9 @@ id = "orcid"
 url = "https://orcid.org/%s"
 title = "ORCiD"
 icon = "fab fa-orcid"
+
+[[social_icons]]
+id = "devto"
+url = "https://dev.to/%s"
+title = "devto"
+icon = "fab fa-dev"
