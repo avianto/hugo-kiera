@@ -32,7 +32,7 @@ It was originally developed by [b. avianto](https://github.com/avianto/hugo-kier
 - Utilize normalize.css for consistent styling (Cloudflare CDN).
 - Use Google Fonts: Ruda (serif) and Roboto Slab (sans-serif).
 - [Disqus](https://disqus.com) or [Utterances](https://utteranc.es) comments loaded on demand.
-
+- Supports downloading extra [Google Fonts](https://fonts.google.com/).
 
 ## Demo
 
