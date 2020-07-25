@@ -10,7 +10,12 @@
 
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" integrity="sha256-l85OmPOjvil/SOvVt3HnSSjzF1TUMyT9eV0c2BzEGzU=" crossorigin="anonymous" />
   <link rel="stylesheet" href="{{ "fontawesome/css/all.min.css" | absURL }}" />
-  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto+Slab|Ruda" />
+  {{ if .Site.Params.google_fonts }}
+    {{ $url_part := (delimit .Site.Params.google_fonts "|") | safeHTMLAttr }}
+    <link {{ printf "href=\"//fonts.googleapis.com/css?family=%s\"" $url_part | safeHTMLAttr }} rel="stylesheet">
+  {{ else}}
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto+Slab|Ruda" />
+  {{ end }}
   <link rel="stylesheet" type="text/css" href="{{ "css/styles.css" | relURL}}" />
   {{- range .Site.Params.customCSS -}}
     <link rel='stylesheet' href='{{ . | absURL }}'>
