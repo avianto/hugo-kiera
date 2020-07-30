@@ -105,6 +105,7 @@ googleAnalytics = "" #Google Analytics ID
 [params]
     tagline = "the tagline for this website"
     customCSS = []  #Optional Customised CSS
+    disableDarkModeCSS = false # disables css style for users using dark-mode
 ```
 
 ### Main Menu
