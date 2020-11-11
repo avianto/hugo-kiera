@@ -19,3 +19,6 @@ other = "Rendered by"
 
 [comments]
 other = "Add/View Comments"
+
+[modifiedOn]
+other = "modified on"
