@@ -200,6 +200,10 @@ Set `Params.mathjax` to true to enable support of mathematics display using [Mat
 
 Comments can be disabled for a single page by setting `disableComments = true` in the page frontmatter.
 
+### Last Modified Date
+
+If the `lastmod` option is set on a page/post, either manually or because `enableGitInfo` is set to true, a line including the page's last modification will be shown after the post date.
+
 ## Support and Pull Requests
 
 Please use GitHub issues to file bugs. If you can help fixing bugs, optimize the theme or adding features, please do pull requests, I really love to see what others can come up with.
