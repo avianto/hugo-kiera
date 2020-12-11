@@ -3,7 +3,7 @@
 <html lang="{{ .Site.LanguageCode | default "en" }}">
 
 <head>
-  <title>{{ if .Title }}{{ .Title }} - {{ end }}{{ .Site.Title }}</title>
+  <title>{{ if and (not .IsHome) (.Title) }}{{ .Params.Title }} - {{ end }}{{ .Site.Title }}</title>
   {{ partial "meta" . }}
   {{ partialCached "header_includes" . -}}
 </head>
