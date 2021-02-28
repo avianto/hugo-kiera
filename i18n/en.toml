@@ -3,7 +3,7 @@ other = "Categories:"
 
 [readingTime]
 one = "One minute read"
-other = "{{.Count}} minutes read"
+other = "{{.Count}} minute read"
 
 [readMore]
 other = "Read more…"
