@@ -3,7 +3,7 @@
 <meta name="description" content="{{ .Site.Params.description | default "The HTML5 Herald" }}" />
 <meta name="author" content="{{ .Params.Author | default .Site.Author.name }}" />
 {{- with .OutputFormats.Get "rss" -}}
-	{{ printf `<link rel="%s" type="%s+%s" href="%s" title="%s" />` .Rel .MediaType.Type .MediaType.Suffix .Permalink $.Site.Title | safeHTML }}
+	{{ printf `<link rel="%s" type="%s" href="%s" title="%s" />` .Rel .MediaType.Type .Permalink $.Site.Title | safeHTML }}
 {{- end -}}
 {{ template "_internal/opengraph.html" . }}
 {{ template "_internal/twitter_cards.html" . }}
