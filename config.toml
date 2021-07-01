@@ -1,0 +1,6 @@
+baseURL = "https://example.com/"
+
+[module]
+  [module.hugoVersion]
+    extended = false
+    min = "0.55.0"
