@@ -36,7 +36,7 @@ It was originally developed by [b. avianto](https://github.com/avianto/hugo-kier
 
 ## Demo
 
-Live demo: [https://themes.gohugo.io/theme/hugo-kiera/](https://themes.gohugo.io/theme/hugo-kiera/)
+Live demo: [https://themes.gohugo.io/themes/hugo-kiera/](https://themes.gohugo.io/themes/hugo-kiera/)
 
 ## Installation
 
