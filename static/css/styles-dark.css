@@ -277,13 +277,20 @@ a {
   box-shadow: 0 3px 3px #bbbbbb;
 }
 
-.full-image, figure.full img, img[src*="full"] {
+/**
+:not(#home) and :not(#list) is avoiding full width image in list of posts, e.g. home and taxonomy pages
+ */
+header .full-image, header figure.full img, header img[src*="full"],
+article .full-image, article figure.full img, article img[src*="full"],
+section:not(#list):not(#home) .full-image, section:not(#list):not(#home) figure.full img, section:not(#list):not(#home) img[src*="full"] {
   width: 100%;
   box-shadow: 0 3px 3px #bbbbbb;
 }
 
 @supports (width: 100vw) {
-  .full-image, figure.full img, img[src*="full"] {
+  header .full-image, header figure.full img, header img[src*="full"],
+  article .full-image, article figure.full img, article img[src*="full"],
+  section:not(#list):not(#home) .full-image, section:not(#list):not(#home) figure.full img, section:not(#list):not(#home) img[src*="full"] {
     width: 100vw;
     position: relative;
     left: 50%;
