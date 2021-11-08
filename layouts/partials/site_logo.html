@@ -1,0 +1,7 @@
+{{ if or (.Site.Params.site_logo) (.Params.replace_site_logo) }}
+<div class="site_logo featured_image">
+    <a href="{{ relLangURL "/" }}">
+        <img class="{{ .Site.Params.site_logo_classes }}" src="{{ if .Params.replace_site_logo }}{{ index .Params.images 0 }}{{ else }}{{ .Site.Params.site_logo }}{{ end }}">
+    </a>
+</div>
+{{ end }}

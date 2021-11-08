@@ -154,6 +154,32 @@ To link to tags use the url `/tags/` (e.g. `https://example.com/tags/`) and `/ca
 
 ### Images
 
+#### Site header
+
+A side header can be added in `config.toml`.
+
+```
+site_logo = "/link/to/image"
+```
+
+It is possible to use full width image as well, using either `/link/to/image#full` (which will affect only this image and
+not the featured images for posts which may override the site header image) or `site_logo_classes = "full-image"` in `config.toml` (which
+will affect all header images, even if a featured image of a post overrides the site logo).
+
+#### Featured images for posts
+
+A featured image for a post which will be shown in list overviews and at the top of the post page can be added in the frontmatter.
+
+```
+images: ["/link/to/image"]
+```
+
+Here, too, it is possible to display the image in full width appending `#full` or `#float` to the URL (see below).
+
+Featured images can override the site logo on the post page, using `replace_site_logo: false` in the frontmatter.
+
+#### Images in text
+
 Kiera supports adding image as `img` tag with standard Markdown:
 
 `![Image Title](link/to/image)`

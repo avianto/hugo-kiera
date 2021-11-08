@@ -6,7 +6,9 @@
       {{ partial "aside" . }}
     {{ end }}
 
-    {{ partial "featured_image" . }}
+    {{ if not (.Params.replace_site_logo) }}
+      {{ partial "featured_image" . }}
+    {{ end }}
 
     {{ .Content }}
 
