@@ -202,6 +202,26 @@ time {
   font-size: 0.8em;
 }
 
+#container footer ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  display: flex;
+  justify-content: flex-end;
+}
+
+#container footer ul li:first-child {
+  margin-right: auto;
+}
+
+#container footer ul li:not(:first-child) {
+  margin-left: 1em;
+}
+
+#container footer ul li a.active {
+  border-bottom: 0.2em solid #666666;
+}
+
 #container textarea, input {
 -webkit-box-align: center;
 -ms-flex-align: center;
