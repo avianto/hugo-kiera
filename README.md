@@ -14,7 +14,7 @@ It was originally developed by [b. avianto](https://github.com/avianto/hugo-kier
     - [git submodule method](#git-submodule-method)
     - [independent directory method](#independent-directory-method)
   - [Configuration](#configuration)
-    - [Main Menu](#main-menu)
+    - [Menus](#menus)
     - [Categories & Tags](#categories--tags)
     - [Images](#images)
     - [Code highlight](#code-highlight)
@@ -108,7 +108,7 @@ googleAnalytics = "" #Google Analytics ID
     disableDarkModeCSS = false # disables css style for users using dark-mode
 ```
 
-### Main Menu
+### Menus
 
 To add non-posts related page (eq. About page) to the main menu, adding these lines to the page [front matter](https://gohugo.io/content-management/front-matter/):
 
@@ -138,7 +138,6 @@ menu = "main"
 weight = "10"
 ```
 
-
 YAML:
 
 ```yml
@@ -146,6 +145,11 @@ title : "Posts"
 menu : "main"
 weight : "10"
 ```
+
+Following menus are available:
+
+* `main`, displayed in the navigation bar at the top of the page
+* `footer`, displayed on the lower right, in the footer 
 
 ### Categories & Tags
 
