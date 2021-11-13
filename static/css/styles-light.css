@@ -150,6 +150,10 @@ time {
   font-size: 0.9em;
 }
 
+#container main section.post-nav ul li:last-child {
+  text-align: right;
+}
+
 #container main article > pre {
   background-color: #ffffcc;
   overflow-x: auto;
