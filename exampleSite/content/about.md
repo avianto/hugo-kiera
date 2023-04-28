@@ -3,7 +3,7 @@ title = "About Hugo"
 date = "2014-04-09"
 menu = "main"
 weight = "20"
-meta = "false"
+meta = "true"
 +++
 
 Hugo is a static site engine written in Go. <i class="far fa-clipboard"></i>
