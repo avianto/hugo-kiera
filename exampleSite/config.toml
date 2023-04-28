@@ -15,7 +15,7 @@ pygmentsCodeFences = true
 # Note: to disable a social network icon delete or comment out the corresponding line
 [author]
     name = "Example"
-    github = "funkydan2"
+    github = "funkydan2/hugo-kiera"
     #gitlab = "username"
     #linkedin = "username"
     #facebook = "username"
